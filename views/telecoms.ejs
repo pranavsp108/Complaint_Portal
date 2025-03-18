@@ -1,0 +1,257 @@
+<%-include("partials/header")-%>
+
+<div class="type" class="complaintType">
+  <br><br>
+
+  <br><br>
+  <div class="card">
+    <h3 class="card-header">Grievance registration form</h3>
+    <div class="card-body">
+      <form class="" action="/organization/telecoms1" enctype="multipart/form-data" method="post">
+      <div class="card-simple">
+        <h5 class="card-title" style="text-align:center;padding:10px; color:#086972;">Please note : If specific information related to a service is not available / known, select Others/Misc. option for lodging of grievance.</h5>
+      </div>
+
+      <div class="form-group">
+                          <div class="row">
+                              <label class="col-md-4 text-right " for="Category">Ministry / Department : </label>
+                              <div class="col-md-6">
+                                <p><%= Ministry %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select main category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_2" name="Category" data-select2-id="Category_2" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="2">Please select main category</option>
+<option value="2">Mobile Related</option>
+<option value="3">Pension Related</option>
+<option value="4">Broadband Related</option>
+<option value="5">Landline Related</option>
+<option value="6">Employee Related / Services Related</option>
+<option value="7">Tower Related</option>
+<option value="8">Malpractices / Corruption / Complaint Related to financial irregularities</option>
+<option value="9">Suggestions</option>
+<option value="10">Others</option>
+</select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 510.5px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_2-container"><span class="select2-selection__rendered" id="select2-Category_2-container" role="textbox" aria-readonly="true" title="Please select main category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+      <!-- Next level category of 62  refer line 28 -->
+      <div class="form-group next-level-cat 2">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="21">Select next level category</option>
+    <option value="11">Call Drop</option>
+    <option value="12">Improper Network Coverage</option>
+    <option value="13">Data Speed lower than commited</option>
+    <option value="14">Mobile Number Portability (MNP)</option>
+    <option value="15">UCC related complaints</option>
+    <option value="16">Activation/Deactivation of Value Added Services without explicit consent</option>
+    <option value="17">Activation/Deactivation/Fault of Sim Card</option>
+    <option value="18">AADHAR Linking/Documents verification</option>
+    <option value="19">Tariff / Recharge issue / Billing issue of Postpaid</option>
+    <option value="20">No Network Coverage</option>
+    <option value="21">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="20" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+      <!-- Next level category of 63  refer line 29 -->
+      <div class="form-group next-level-cat 3">
+        <div class="row">
+            <label class="col-md-4 text-right" for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="37">Select next level category</option>
+    <option value="22">Pension not started / Pension stopped</option>
+    <option value="23">Revision of Pension</option>
+    <option value="24">Miscalculation in Pension</option>
+    <option value="25">Adding beneficiary in PPO</option>
+    <option value="26">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="36" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 64  refer line 30 -->
+    <div class="form-group next-level-cat 4">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="50">Select next level category</option>
+  <option value="27">Delay in New BB Connection</option>
+  <option value="28">Landline working but Internet not working/Frequent disconnection</option>
+  <option value="29">Billing issue</option>
+  <option value="30">Speed lower than committed</option>
+  <option value="31">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="49" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+
+    <!-- Next level category of 65  refer line 31 -->
+    <div class="form-group next-level-cat 5">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="60">Select next level category</option>
+  <option value="32">Delay or issue in providing New Telephone Connection/Shifting/Change of Name</option>
+  <option value="33">New Connection</option>
+  <option value="34">Delay  in disconnection/closure</option>
+  <option value="35">Denial of rent rebate during fault</option>
+  <option value="36">Telephone Faulty/dead</option>
+  <option value="37">Security Refund</option>
+  <option value="38">Billing issue</option>
+  <option value="39">Telephone not working properly</option>
+  <option value="40">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="59" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+    <!-- Next level category of 66  refer line 32 -->
+    <div class="form-group next-level-cat 6">
+      <div class="row">
+          <label class="col-md-4 text-right" for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="74">Select next level category</option>
+  <option value="41">Compensatory ground appointment</option>
+  <option value="42">Pending any type of Bill/dues for payment</option>
+  <option value="43">Issues related to Promotion</option>
+  <option value="44">Transfer/Posting</option>
+  <option value="45">Pending Disciplinary/Vigilance matters</option>
+  <option value="46">Sexual harassment</option>
+  <option value="47">Misbehaviour/Harassment by any officer/staff</option>
+  <option value="48">Residential Service Telephone Connection</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="73" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+    <!-- Next level category of 67  refer line 33 -->
+    <div class="form-group next-level-cat 7">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="92">Select next level category</option>
+  <option value="49">Health Hazard / Radiation Issue</option>
+  <option value="50">Tower installation related fraud / Cheating</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="91" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+    <!-- Next level category of 68  refer line 34 -->
+    <div class="form-group next-level-cat 8">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="99">Select next level category</option>
+  <option value="51">Employee Related Case</option>
+  <option value="52">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="98" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+
+    <!-- Next level category of 69  refer line 35 -->
+    <div class="form-group next-level-cat 9">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category" data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="106">Select next level category</option>
+  <option value="53">Mobile Related</option>
+  <option value="54">Landline Related</option>
+  <option value="55">Broaband / Internet related</option>
+  <option value="56">TRAI Related</option>
+  <option value="57">General suggestion related to DoT / Policy</option>
+  <option value="58">Spectrum/License (2G, 3G, 4G)</option>
+  <option value="59">Spectrum/License (5G)</option>
+  <option value="60">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="105" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+
+
+  <!--Grievance-->
+  <div class="form-group grievance 10">
+    <div class="row">
+        <label class="col-md-4 text-right " for="Category">Describe your Grievance here :</label>
+        <div class="col-md-6">
+             <textarea autocomplete="off" class="form-control" cols="50" id="Remarks" maxlength="500" name="Remarks" placeholder="Please Enter Text of Grievance (Remarks)"  rows="5" style="resize: none"></textarea><br>
+             <span class="text-info">Maximum 500 characters are allowed in description.</span>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-md-4 text-right " for="Category">Attach Files related to Grievance (only one PDF file upto 4MB):</label>
+        <div class="col-md-6">
+<%# <input type="file" id="myfile" name="uploadfile"> %>
+<input name="uploadfile" type="file" multiple="" class="inputFileHidden">
+        </div>
+
+    </div>
+    <div style="text-align: center;">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+<input type="text" id="Main_Cat_Value" style="visibility:hidden;" name="Main_Cat_Value" value="">
+<input type="text" id="Sub_Cat_Value" style="visibility:hidden;" name="Sub_Cat_Value" value="">
+<input type="text" id="" style="visibility:hidden;" name="Mini_Value" value="<%= Ministry %>">
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$("document").ready(function(){
+
+    $("#Category_2").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".next-level-cat").not("." + optionValue).hide();
+                $("." + optionValue).show();
+                $("#Main_Cat_Value").attr("value", $(this).text());
+            } else{
+                $(".next-level-cat").hide();
+            }
+
+        });
+    }).change();
+
+});
+
+</script>
+<script>
+$("document").ready(function(){
+    $(".next-level-cat").change(function(){
+        $(this).find("option:selected").each(function(){
+          var optionValue = $(this).attr("value");
+          if(optionValue){
+            $(".grievance").show();
+            $("#Sub_Cat_Value").attr("value", $(this).text());
+          }
+          });
+
+    }).change();
+    });
+</script>
+<%-include("partials/footer")-%>

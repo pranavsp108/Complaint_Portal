@@ -1,0 +1,1453 @@
+<%-include("partials/header")-%>
+
+<div class="type" class="complaintType">
+  <br><br>
+
+  <br><br>
+  <div class="card">
+    <h3 class="card-header">Grievance registration form</h3>
+    <div class="card-body">
+      <form class="" action="/organization/externalaffair1" enctype="multipart/form-data" method="post">
+      <div class="card-simple">
+        <h5 class="card-title" style="text-align:center;padding:10px; color:#086972;">Please note : If specific information related to a service is not available / known, select Others/Misc. option for lodging of grievance.</h5>
+      </div>
+
+      <div class="form-group">
+                          <div class="row">
+                              <label class="col-md-4 text-right " for="Category">Ministry / Department : </label>
+                              <div class="col-md-6">
+                                <p><%= Ministry %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group" data-select2-id="5">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select main category</label>
+            <div class="col-md-6" data-select2-id="4">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_2" name="Category" data-select2-id="Category_2" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="2">Please select main category</option>
+<option value="1227" data-select2-id="12">Death Compensation not paid while being employed</option>
+<option value="1228" data-select2-id="13">Imprisonment due to illegal Stay in foreign country</option>
+<option value="1229" data-select2-id="14">Transportation of Mortal remains</option>
+<option value="1230" data-select2-id="15">Seafarers</option>
+<option value="1231" data-select2-id="16">Whereabouts Unknown</option>
+<option value="1232" data-select2-id="17">Normal Fresh/ Re-issue Passport application </option>
+<option value="1233" data-select2-id="18">Tatkaal  Passport application</option>
+<option value="1234" data-select2-id="19">Delay in issuance Police Clearance Certificate Application</option>
+<option value="1235" data-select2-id="20">Postal Issues (Dispatch of Passport)</option>
+<option value="1236" data-select2-id="21">Delay in  Issuance of Surrender Certificate</option>
+<option value="1237" data-select2-id="22">Value added service delivery issues</option>
+<option value="1238" data-select2-id="23">Indian Community Welfare Fund (ICWF) Related</option>
+<option value="1239" data-select2-id="24">Pravasi Bharatiya Bima Yojana (PBBY) Related</option>
+<option value="1240" data-select2-id="25">Marital Dispute with NRI/PIO</option>
+<option value="1241" data-select2-id="26">Student Related (Grievances of indian students abroad)</option>
+<option value="1242" data-select2-id="27">NRI/PIO Related issues</option>
+<option value="1243" data-select2-id="28">Illegal Agent Related</option>
+<option value="1244" data-select2-id="29">Others</option>
+</select><span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" data-select2-id="1" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_2-container"><span class="select2-selection__rendered" id="select2-Category_2-container" role="textbox" aria-readonly="true" title="Please select main category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+      <!-- Next level category of 1227 refer line 28 -->
+      <div class="form-group next-level-cat 1227">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Mission">Mission</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Mission" ><option value="">Please select a Mission</option>
+<option value="HRT01">Afghanistan - Herat</option>
+<option value="JBD01">Afghanistan - Jalalabad</option>
+<option value="KBL00">Afghanistan - Kabul</option>
+<option value="KAN00">Afghanistan - Kandahar</option>
+<option value="MZR01">Afghanistan - Mazar-e-Sharif</option>
+<option value="ALG01">Algeria - Algiers</option>
+<option value="LUA01">Angola - Luanda</option>
+<option value="BNS01">Argentina - Buenos Aires</option>
+<option value="YVV01">Armenia - Yerevan</option>
+<option value="CNB01">Australia - Canberra</option>
+<option value="MLB01">Australia - Melbourne</option>
+<option value="PRT01">Australia - Perth</option>
+<option value="SYD01">Australia - Sydney</option>
+<option value="VIE01">Austria - Vienna</option>
+<option value="BKU01">Azerbaijan - Baku</option>
+<option value="BAH01">Bahrain - Manama</option>
+<option value="CHT01">Bangladesh - Chittagong</option>
+<option value="BDA01">Bangladesh - Dhaka</option>
+<option value="BRJ01">Bangladesh - Rajshahi</option>
+<option value="KHL01">Bangladesh-Khulna</option>
+<option value="SYL01">Bangladesh-Sylhet</option>
+<option value="MNS01">Belarus - Minsk</option>
+<option value="BRS01">Belgium - Brussels</option>
+<option value="PHU01">Bhutan - Phuentsholing</option>
+<option value="THI01">Bhutan - Thimphu</option>
+<option value="GAB01">Botswana - Gaborone</option>
+<option value="BRI01">Brazil - Brasilia</option>
+<option value="PAU01">Brazil - Sao Paulo</option>
+<option value="BRU01">Brunei Darussalam - Bandar Seri Begawan</option>
+<option value="SOF01">Bulgaria - Sofia</option>
+<option value="PHN01">Cambodia - Phnom Penh</option>
+<option value="OTT01">Canada - Ottawa</option>
+<option value="TOR01">Canada - Toronto</option>
+<option value="VAN01">Canada - Vancouver</option>
+<option value="SAN01">Chile - Santiago</option>
+<option value="BEI01">China - Beijing</option>
+<option value="GZG01">China - Guangzhou</option>
+<option value="HON01">China - Hong Kong</option>
+<option value="SHG01">China - Shanghai</option>
+<option value="BOG01">Colombia - Bogota</option>
+<option value="ABI01">Cote Divoire - Abidjan</option>
+<option value="ZAG01">Croatia - Zagreb</option>
+<option value="HAV01">Cuba - Havana</option>
+<option value="NIC01">Cyprus - Nicosia</option>
+<option value="CZP01">Czech Republic - Prague</option>
+<option value="KIN01">Democratic Republic of Congo - Kinshasa</option>
+<option value="DEN01">Denmark - Copenhagen</option>
+<option value="DJI01">Djibouti - Djibouti</option>
+<option value="PYN01">DPR Korea - Pyongyang</option>
+<option value="CAI01">Egypt - Cairo</option>
+<option value="MBB01">Eswatini-Mbabane</option>
+<option value="ETH01">Ethiopia - Addis Ababa</option>
+<option value="SUV01">Fiji - Suva</option>
+<option value="HEL01">Finland - Helsinki</option>
+<option value="PAR01">France - Paris</option>
+<option value="SAI01">France - Saint Denis</option>
+<option value="BER01">Germany - Berlin</option>
+<option value="FRA01">Germany - Frankfurt</option>
+<option value="HMG01">Germany - Hamburg</option>
+<option value="MUN01">Germany - Munich</option>
+<option value="GHA01">Ghana - Accra</option>
+<option value="GRE01">Greece - Athens</option>
+<option value="GTA01">Guatemala - Guatemala City</option>
+<option value="GTE01">Guyana - Georgetown</option>
+<option value="BPE01">Hungary - Budapest</option>
+<option value="REY01">Iceland - Reykjavik</option>
+<option value="BAI01">Indonesia - Bali</option>
+<option value="JAK01">Indonesia - Jakarta</option>
+<option value="MDE01">Indonesia - Medan</option>
+<option value="BDR01">Iran - Bandar Abbas</option>
+<option value="THR01">Iran - Tehran</option>
+<option value="ZAH01">Iran - Zahidan</option>
+<option value="BAG01">Iraq - Baghdad</option>
+<option value="DUB01">Ireland - Dublin</option>
+<option value="TEL01">Israel - Tel aviv</option>
+<option value="MLA01">Italy - Milan</option>
+<option value="ROM01">Italy - Rome</option>
+<option value="KNG01">Jamaica - Kingston</option>
+<option value="OSA01">Japan - Osaka-Kobe</option>
+<option value="TOK01">Japan - Tokyo</option>
+<option value="AMM01">Jordan - Amman</option>
+<option value="ALM01">Kazakhstan - Almaty</option>
+<option value="NUR01">Kazakhstan - Nur Sultan</option>
+<option value="MOM01">Kenya - Mombasa</option>
+<option value="NAI01">Kenya - Nairobi</option>
+<option value="KUW01">Kuwait - Kuwait City</option>
+<option value="BIS01">Kyrgyzstan - Bishkek</option>
+<option value="VIT01">Lao PDR - Vientiane</option>
+<option value="BET01">Lebanon - Beirut</option>
+<option value="ANT01">Madagascar - Antananarivo</option>
+<option value="LIL01">Malawi - Lilongwe</option>
+<option value="KLU01">Malaysia - Kuala Lumpur</option>
+<option value="MAE01">Maldives - Male</option>
+<option value="BMA01">Mali - Bamako</option>
+<option value="VAL01">Malta - Valletta</option>
+<option value="POR01">Mauritius - Port Louis</option>
+<option value="MEX01">Mexico - Mexico City</option>
+<option value="ULB01">Mongolia-Ulaanbaatar</option>
+<option value="RBT01">Morocco-Rabat</option>
+<option value="MAP01">Mozambique - Maputo</option>
+<option value="MND01">Myanmar - Mandalay</option>
+<option value="SIT01">Myanmar - Sittwe</option>
+<option value="YAN01">Myanmar - Yangon</option>
+<option value="WIN01">Namibia - Windhoek</option>
+<option value="BNJ01">Nepal - Birgunj</option>
+<option value="KTH01">Nepal - Kathmandu</option>
+<option value="HAG01">Netherlands - The Hague</option>
+<option value="WLN01">New Zealand - Wellington</option>
+<option value="NAM01">Niger - Niamey</option>
+<option value="ABJ01">Nigeria - Abuja</option>
+<option value="LAG01">Nigeria - Lagos</option>
+<option value="OSL01">Norway - Oslo</option>
+<option value="MSC01">Oman - Muscat</option>
+<option value="ISL01">Pakistan - Islamabad</option>
+<option value="PNM01">Panama - Panama</option>
+<option value="PAP01">Papua New Guinea - Port Moresby</option>
+<option value="LIM01">Peru - Lima</option>
+<option value="MNL01">Philippines - Manila</option>
+<option value="WAR01">Poland - Warsaw</option>
+<option value="LIS01">Portugal - Lisbon</option>
+<option value="DOA01">Qatar - Doha</option>
+<option value="SEO01">Republic of Korea-Seoul</option>
+<option value="BOH01">Romania - Bucharest</option>
+<option value="MOS01">Russian Federation - Moscow</option>
+<option value="VLA01">Russian Federation - St. Petersburg</option>
+<option value="VOK01">Russian Federation - Vladivostok</option>
+<option value="KIG01">Rwanda - Kigali</option>
+<option value="JED01">Saudi Arabia - Jeddah</option>
+<option value="RIY01">Saudi Arabia - Riyadh</option>
+<option value="DAA01">Senegal - Dakar</option>
+<option value="BED01">Serbia - Belgrade</option>
+<option value="MHE01">Seychelles - Victoria-Mahe</option>
+<option value="SIN01">Singapore - Singapore</option>
+<option value="BVA01">Slovakia - Bratislava</option>
+<option value="LJB01">Slovenia - Ljubljana</option>
+<option value="CPT01">South Africa - Cape Town</option>
+<option value="DUR01">South Africa - Durban</option>
+<option value="JOH01">South Africa - Johannesburg</option>
+<option value="PRE01">South Africa - Pretoria</option>
+<option value="JUB01">South Sudan - Juba</option>
+<option value="MDR01">Spain - Madrid</option>
+<option value="CLB01">Sri Lanka - Colombo</option>
+<option value="HBM01">Sri Lanka - Hambantota</option>
+<option value="JFN01">Sri Lanka - Jaffna</option>
+<option value="KDY01">Sri Lanka - Kandy</option>
+<option value="KHT01">Sudan - Khartoum</option>
+<option value="PMR01">Suriname - Paramaribo</option>
+<option value="STK01">Sweden - Stockholm</option>
+<option value="BRN01">Switzerland - Berne</option>
+<option value="GNV01">Switzerland - Geneva</option>
+<option value="DMS01">Syria - Damascus</option>
+<option value="DSH01">Tajikistan - Dushanbe</option>
+<option value="DRS01">Tanzania - Dar es Salaam</option>
+<option value="ZNB01">Tanzania - Zanzibar</option>
+<option value="BGK01">Thailand - Bangkok</option>
+<option value="CHG01">Thailand - Chiangmai</option>
+<option value="POS01">Trinidad And Tobago - Port of Spain</option>
+<option value="TNS01">Tunisia - Tunis</option>
+<option value="ANK01">Turkey - Ankara</option>
+<option value="IST01">Turkey - Istanbul</option>
+<option value="ASH01">Turkmenistan - Ashgabat</option>
+<option value="KMP01">Uganda - Kampala</option>
+<option value="KYI01">Ukraine - Kyiv</option>
+<option value="ABU01">United Arab Emirates - Abu Dhabi</option>
+<option value="DBI01">United Arab Emirates - Dubai</option>
+<option value="BMN01">United Kingdom - Birmingham</option>
+<option value="EDB01">United Kingdom - Edinburgh</option>
+<option value="LON01">United Kingdom - London</option>
+<option value="ATL01">USA - Atlanta</option>
+<option value="CCG01">USA - Chicago</option>
+<option value="HST01">USA - Houston</option>
+<option value="NYK01">USA - New York</option>
+<option value="SFR01">USA - San Francisco</option>
+<option value="WSH01">USA - Washington DC</option>
+<option value="TAS01">Uzbekistan - Tashkent</option>
+<option value="CAR01">Venezuela - Caracas</option>
+<option value="HOI01">Vietnam - Hanoi</option>
+<option value="HCM01">Vietnam - Ho Chi Minh City</option>
+<option value="SAA01">Yemen - Sanaa</option>
+<option value="LUS01">Zambia - Lusaka</option>
+<option value="HRR01">Zimbabwe - Harare</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1228  refer line 29 -->
+    <div class="form-group next-level-cat 1228">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Mission">Mission</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Mission" ><option value="">Please select a Mission</option>
+<option value="HRT01">Afghanistan - Herat</option>
+<option value="JBD01">Afghanistan - Jalalabad</option>
+<option value="KBL00">Afghanistan - Kabul</option>
+<option value="KAN00">Afghanistan - Kandahar</option>
+<option value="MZR01">Afghanistan - Mazar-e-Sharif</option>
+<option value="ALG01">Algeria - Algiers</option>
+<option value="LUA01">Angola - Luanda</option>
+<option value="BNS01">Argentina - Buenos Aires</option>
+<option value="YVV01">Armenia - Yerevan</option>
+<option value="CNB01">Australia - Canberra</option>
+<option value="MLB01">Australia - Melbourne</option>
+<option value="PRT01">Australia - Perth</option>
+<option value="SYD01">Australia - Sydney</option>
+<option value="VIE01">Austria - Vienna</option>
+<option value="BKU01">Azerbaijan - Baku</option>
+<option value="BAH01">Bahrain - Manama</option>
+<option value="CHT01">Bangladesh - Chittagong</option>
+<option value="BDA01">Bangladesh - Dhaka</option>
+<option value="BRJ01">Bangladesh - Rajshahi</option>
+<option value="KHL01">Bangladesh-Khulna</option>
+<option value="SYL01">Bangladesh-Sylhet</option>
+<option value="MNS01">Belarus - Minsk</option>
+<option value="BRS01">Belgium - Brussels</option>
+<option value="PHU01">Bhutan - Phuentsholing</option>
+<option value="THI01">Bhutan - Thimphu</option>
+<option value="GAB01">Botswana - Gaborone</option>
+<option value="BRI01">Brazil - Brasilia</option>
+<option value="PAU01">Brazil - Sao Paulo</option>
+<option value="BRU01">Brunei Darussalam - Bandar Seri Begawan</option>
+<option value="SOF01">Bulgaria - Sofia</option>
+<option value="PHN01">Cambodia - Phnom Penh</option>
+<option value="OTT01">Canada - Ottawa</option>
+<option value="TOR01">Canada - Toronto</option>
+<option value="VAN01">Canada - Vancouver</option>
+<option value="SAN01">Chile - Santiago</option>
+<option value="BEI01">China - Beijing</option>
+<option value="GZG01">China - Guangzhou</option>
+<option value="HON01">China - Hong Kong</option>
+<option value="SHG01">China - Shanghai</option>
+<option value="BOG01">Colombia - Bogota</option>
+<option value="ABI01">Cote Divoire - Abidjan</option>
+<option value="ZAG01">Croatia - Zagreb</option>
+<option value="HAV01">Cuba - Havana</option>
+<option value="NIC01">Cyprus - Nicosia</option>
+<option value="CZP01">Czech Republic - Prague</option>
+<option value="KIN01">Democratic Republic of Congo - Kinshasa</option>
+<option value="DEN01">Denmark - Copenhagen</option>
+<option value="DJI01">Djibouti - Djibouti</option>
+<option value="PYN01">DPR Korea - Pyongyang</option>
+<option value="CAI01">Egypt - Cairo</option>
+<option value="MBB01">Eswatini-Mbabane</option>
+<option value="ETH01">Ethiopia - Addis Ababa</option>
+<option value="SUV01">Fiji - Suva</option>
+<option value="HEL01">Finland - Helsinki</option>
+<option value="PAR01">France - Paris</option>
+<option value="SAI01">France - Saint Denis</option>
+<option value="BER01">Germany - Berlin</option>
+<option value="FRA01">Germany - Frankfurt</option>
+<option value="HMG01">Germany - Hamburg</option>
+<option value="MUN01">Germany - Munich</option>
+<option value="GHA01">Ghana - Accra</option>
+<option value="GRE01">Greece - Athens</option>
+<option value="GTA01">Guatemala - Guatemala City</option>
+<option value="GTE01">Guyana - Georgetown</option>
+<option value="BPE01">Hungary - Budapest</option>
+<option value="REY01">Iceland - Reykjavik</option>
+<option value="BAI01">Indonesia - Bali</option>
+<option value="JAK01">Indonesia - Jakarta</option>
+<option value="MDE01">Indonesia - Medan</option>
+<option value="BDR01">Iran - Bandar Abbas</option>
+<option value="THR01">Iran - Tehran</option>
+<option value="ZAH01">Iran - Zahidan</option>
+<option value="BAG01">Iraq - Baghdad</option>
+<option value="DUB01">Ireland - Dublin</option>
+<option value="TEL01">Israel - Tel aviv</option>
+<option value="MLA01">Italy - Milan</option>
+<option value="ROM01">Italy - Rome</option>
+<option value="KNG01">Jamaica - Kingston</option>
+<option value="OSA01">Japan - Osaka-Kobe</option>
+<option value="TOK01">Japan - Tokyo</option>
+<option value="AMM01">Jordan - Amman</option>
+<option value="ALM01">Kazakhstan - Almaty</option>
+<option value="NUR01">Kazakhstan - Nur Sultan</option>
+<option value="MOM01">Kenya - Mombasa</option>
+<option value="NAI01">Kenya - Nairobi</option>
+<option value="KUW01">Kuwait - Kuwait City</option>
+<option value="BIS01">Kyrgyzstan - Bishkek</option>
+<option value="VIT01">Lao PDR - Vientiane</option>
+<option value="BET01">Lebanon - Beirut</option>
+<option value="ANT01">Madagascar - Antananarivo</option>
+<option value="LIL01">Malawi - Lilongwe</option>
+<option value="KLU01">Malaysia - Kuala Lumpur</option>
+<option value="MAE01">Maldives - Male</option>
+<option value="BMA01">Mali - Bamako</option>
+<option value="VAL01">Malta - Valletta</option>
+<option value="POR01">Mauritius - Port Louis</option>
+<option value="MEX01">Mexico - Mexico City</option>
+<option value="ULB01">Mongolia-Ulaanbaatar</option>
+<option value="RBT01">Morocco-Rabat</option>
+<option value="MAP01">Mozambique - Maputo</option>
+<option value="MND01">Myanmar - Mandalay</option>
+<option value="SIT01">Myanmar - Sittwe</option>
+<option value="YAN01">Myanmar - Yangon</option>
+<option value="WIN01">Namibia - Windhoek</option>
+<option value="BNJ01">Nepal - Birgunj</option>
+<option value="KTH01">Nepal - Kathmandu</option>
+<option value="HAG01">Netherlands - The Hague</option>
+<option value="WLN01">New Zealand - Wellington</option>
+<option value="NAM01">Niger - Niamey</option>
+<option value="ABJ01">Nigeria - Abuja</option>
+<option value="LAG01">Nigeria - Lagos</option>
+<option value="OSL01">Norway - Oslo</option>
+<option value="MSC01">Oman - Muscat</option>
+<option value="ISL01">Pakistan - Islamabad</option>
+<option value="PNM01">Panama - Panama</option>
+<option value="PAP01">Papua New Guinea - Port Moresby</option>
+<option value="LIM01">Peru - Lima</option>
+<option value="MNL01">Philippines - Manila</option>
+<option value="WAR01">Poland - Warsaw</option>
+<option value="LIS01">Portugal - Lisbon</option>
+<option value="DOA01">Qatar - Doha</option>
+<option value="SEO01">Republic of Korea-Seoul</option>
+<option value="BOH01">Romania - Bucharest</option>
+<option value="MOS01">Russian Federation - Moscow</option>
+<option value="VLA01">Russian Federation - St. Petersburg</option>
+<option value="VOK01">Russian Federation - Vladivostok</option>
+<option value="KIG01">Rwanda - Kigali</option>
+<option value="JED01">Saudi Arabia - Jeddah</option>
+<option value="RIY01">Saudi Arabia - Riyadh</option>
+<option value="DAA01">Senegal - Dakar</option>
+<option value="BED01">Serbia - Belgrade</option>
+<option value="MHE01">Seychelles - Victoria-Mahe</option>
+<option value="SIN01">Singapore - Singapore</option>
+<option value="BVA01">Slovakia - Bratislava</option>
+<option value="LJB01">Slovenia - Ljubljana</option>
+<option value="CPT01">South Africa - Cape Town</option>
+<option value="DUR01">South Africa - Durban</option>
+<option value="JOH01">South Africa - Johannesburg</option>
+<option value="PRE01">South Africa - Pretoria</option>
+<option value="JUB01">South Sudan - Juba</option>
+<option value="MDR01">Spain - Madrid</option>
+<option value="CLB01">Sri Lanka - Colombo</option>
+<option value="HBM01">Sri Lanka - Hambantota</option>
+<option value="JFN01">Sri Lanka - Jaffna</option>
+<option value="KDY01">Sri Lanka - Kandy</option>
+<option value="KHT01">Sudan - Khartoum</option>
+<option value="PMR01">Suriname - Paramaribo</option>
+<option value="STK01">Sweden - Stockholm</option>
+<option value="BRN01">Switzerland - Berne</option>
+<option value="GNV01">Switzerland - Geneva</option>
+<option value="DMS01">Syria - Damascus</option>
+<option value="DSH01">Tajikistan - Dushanbe</option>
+<option value="DRS01">Tanzania - Dar es Salaam</option>
+<option value="ZNB01">Tanzania - Zanzibar</option>
+<option value="BGK01">Thailand - Bangkok</option>
+<option value="CHG01">Thailand - Chiangmai</option>
+<option value="POS01">Trinidad And Tobago - Port of Spain</option>
+<option value="TNS01">Tunisia - Tunis</option>
+<option value="ANK01">Turkey - Ankara</option>
+<option value="IST01">Turkey - Istanbul</option>
+<option value="ASH01">Turkmenistan - Ashgabat</option>
+<option value="KMP01">Uganda - Kampala</option>
+<option value="KYI01">Ukraine - Kyiv</option>
+<option value="ABU01">United Arab Emirates - Abu Dhabi</option>
+<option value="DBI01">United Arab Emirates - Dubai</option>
+<option value="BMN01">United Kingdom - Birmingham</option>
+<option value="EDB01">United Kingdom - Edinburgh</option>
+<option value="LON01">United Kingdom - London</option>
+<option value="ATL01">USA - Atlanta</option>
+<option value="CCG01">USA - Chicago</option>
+<option value="HST01">USA - Houston</option>
+<option value="NYK01">USA - New York</option>
+<option value="SFR01">USA - San Francisco</option>
+<option value="WSH01">USA - Washington DC</option>
+<option value="TAS01">Uzbekistan - Tashkent</option>
+<option value="CAR01">Venezuela - Caracas</option>
+<option value="HOI01">Vietnam - Hanoi</option>
+<option value="HCM01">Vietnam - Ho Chi Minh City</option>
+<option value="SAA01">Yemen - Sanaa</option>
+<option value="LUS01">Zambia - Lusaka</option>
+<option value="HRR01">Zimbabwe - Harare</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1229  refer line 30 -->
+    <div id="divMission" class="form-group next-level-cat 1229">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Mission">Mission</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Mission" ><option value="">Please select a Mission</option>
+<option value="HRT01">Afghanistan - Herat</option>
+<option value="JBD01">Afghanistan - Jalalabad</option>
+<option value="KBL00">Afghanistan - Kabul</option>
+<option value="KAN00">Afghanistan - Kandahar</option>
+<option value="MZR01">Afghanistan - Mazar-e-Sharif</option>
+<option value="ALG01">Algeria - Algiers</option>
+<option value="LUA01">Angola - Luanda</option>
+<option value="BNS01">Argentina - Buenos Aires</option>
+<option value="YVV01">Armenia - Yerevan</option>
+<option value="CNB01">Australia - Canberra</option>
+<option value="MLB01">Australia - Melbourne</option>
+<option value="PRT01">Australia - Perth</option>
+<option value="SYD01">Australia - Sydney</option>
+<option value="VIE01">Austria - Vienna</option>
+<option value="BKU01">Azerbaijan - Baku</option>
+<option value="BAH01">Bahrain - Manama</option>
+<option value="CHT01">Bangladesh - Chittagong</option>
+<option value="BDA01">Bangladesh - Dhaka</option>
+<option value="BRJ01">Bangladesh - Rajshahi</option>
+<option value="KHL01">Bangladesh-Khulna</option>
+<option value="SYL01">Bangladesh-Sylhet</option>
+<option value="MNS01">Belarus - Minsk</option>
+<option value="BRS01">Belgium - Brussels</option>
+<option value="PHU01">Bhutan - Phuentsholing</option>
+<option value="THI01">Bhutan - Thimphu</option>
+<option value="GAB01">Botswana - Gaborone</option>
+<option value="BRI01">Brazil - Brasilia</option>
+<option value="PAU01">Brazil - Sao Paulo</option>
+<option value="BRU01">Brunei Darussalam - Bandar Seri Begawan</option>
+<option value="SOF01">Bulgaria - Sofia</option>
+<option value="PHN01">Cambodia - Phnom Penh</option>
+<option value="OTT01">Canada - Ottawa</option>
+<option value="TOR01">Canada - Toronto</option>
+<option value="VAN01">Canada - Vancouver</option>
+<option value="SAN01">Chile - Santiago</option>
+<option value="BEI01">China - Beijing</option>
+<option value="GZG01">China - Guangzhou</option>
+<option value="HON01">China - Hong Kong</option>
+<option value="SHG01">China - Shanghai</option>
+<option value="BOG01">Colombia - Bogota</option>
+<option value="ABI01">Cote Divoire - Abidjan</option>
+<option value="ZAG01">Croatia - Zagreb</option>
+<option value="HAV01">Cuba - Havana</option>
+<option value="NIC01">Cyprus - Nicosia</option>
+<option value="CZP01">Czech Republic - Prague</option>
+<option value="KIN01">Democratic Republic of Congo - Kinshasa</option>
+<option value="DEN01">Denmark - Copenhagen</option>
+<option value="DJI01">Djibouti - Djibouti</option>
+<option value="PYN01">DPR Korea - Pyongyang</option>
+<option value="CAI01">Egypt - Cairo</option>
+<option value="MBB01">Eswatini-Mbabane</option>
+<option value="ETH01">Ethiopia - Addis Ababa</option>
+<option value="SUV01">Fiji - Suva</option>
+<option value="HEL01">Finland - Helsinki</option>
+<option value="PAR01">France - Paris</option>
+<option value="SAI01">France - Saint Denis</option>
+<option value="BER01">Germany - Berlin</option>
+<option value="FRA01">Germany - Frankfurt</option>
+<option value="HMG01">Germany - Hamburg</option>
+<option value="MUN01">Germany - Munich</option>
+<option value="GHA01">Ghana - Accra</option>
+<option value="GRE01">Greece - Athens</option>
+<option value="GTA01">Guatemala - Guatemala City</option>
+<option value="GTE01">Guyana - Georgetown</option>
+<option value="BPE01">Hungary - Budapest</option>
+<option value="REY01">Iceland - Reykjavik</option>
+<option value="BAI01">Indonesia - Bali</option>
+<option value="JAK01">Indonesia - Jakarta</option>
+<option value="MDE01">Indonesia - Medan</option>
+<option value="BDR01">Iran - Bandar Abbas</option>
+<option value="THR01">Iran - Tehran</option>
+<option value="ZAH01">Iran - Zahidan</option>
+<option value="BAG01">Iraq - Baghdad</option>
+<option value="DUB01">Ireland - Dublin</option>
+<option value="TEL01">Israel - Tel aviv</option>
+<option value="MLA01">Italy - Milan</option>
+<option value="ROM01">Italy - Rome</option>
+<option value="KNG01">Jamaica - Kingston</option>
+<option value="OSA01">Japan - Osaka-Kobe</option>
+<option value="TOK01">Japan - Tokyo</option>
+<option value="AMM01">Jordan - Amman</option>
+<option value="ALM01">Kazakhstan - Almaty</option>
+<option value="NUR01">Kazakhstan - Nur Sultan</option>
+<option value="MOM01">Kenya - Mombasa</option>
+<option value="NAI01">Kenya - Nairobi</option>
+<option value="KUW01">Kuwait - Kuwait City</option>
+<option value="BIS01">Kyrgyzstan - Bishkek</option>
+<option value="VIT01">Lao PDR - Vientiane</option>
+<option value="BET01">Lebanon - Beirut</option>
+<option value="ANT01">Madagascar - Antananarivo</option>
+<option value="LIL01">Malawi - Lilongwe</option>
+<option value="KLU01">Malaysia - Kuala Lumpur</option>
+<option value="MAE01">Maldives - Male</option>
+<option value="BMA01">Mali - Bamako</option>
+<option value="VAL01">Malta - Valletta</option>
+<option value="POR01">Mauritius - Port Louis</option>
+<option value="MEX01">Mexico - Mexico City</option>
+<option value="ULB01">Mongolia-Ulaanbaatar</option>
+<option value="RBT01">Morocco-Rabat</option>
+<option value="MAP01">Mozambique - Maputo</option>
+<option value="MND01">Myanmar - Mandalay</option>
+<option value="SIT01">Myanmar - Sittwe</option>
+<option value="YAN01">Myanmar - Yangon</option>
+<option value="WIN01">Namibia - Windhoek</option>
+<option value="BNJ01">Nepal - Birgunj</option>
+<option value="KTH01">Nepal - Kathmandu</option>
+<option value="HAG01">Netherlands - The Hague</option>
+<option value="WLN01">New Zealand - Wellington</option>
+<option value="NAM01">Niger - Niamey</option>
+<option value="ABJ01">Nigeria - Abuja</option>
+<option value="LAG01">Nigeria - Lagos</option>
+<option value="OSL01">Norway - Oslo</option>
+<option value="MSC01">Oman - Muscat</option>
+<option value="ISL01">Pakistan - Islamabad</option>
+<option value="PNM01">Panama - Panama</option>
+<option value="PAP01">Papua New Guinea - Port Moresby</option>
+<option value="LIM01">Peru - Lima</option>
+<option value="MNL01">Philippines - Manila</option>
+<option value="WAR01">Poland - Warsaw</option>
+<option value="LIS01">Portugal - Lisbon</option>
+<option value="DOA01">Qatar - Doha</option>
+<option value="SEO01">Republic of Korea-Seoul</option>
+<option value="BOH01">Romania - Bucharest</option>
+<option value="MOS01">Russian Federation - Moscow</option>
+<option value="VLA01">Russian Federation - St. Petersburg</option>
+<option value="VOK01">Russian Federation - Vladivostok</option>
+<option value="KIG01">Rwanda - Kigali</option>
+<option value="JED01">Saudi Arabia - Jeddah</option>
+<option value="RIY01">Saudi Arabia - Riyadh</option>
+<option value="DAA01">Senegal - Dakar</option>
+<option value="BED01">Serbia - Belgrade</option>
+<option value="MHE01">Seychelles - Victoria-Mahe</option>
+<option value="SIN01">Singapore - Singapore</option>
+<option value="BVA01">Slovakia - Bratislava</option>
+<option value="LJB01">Slovenia - Ljubljana</option>
+<option value="CPT01">South Africa - Cape Town</option>
+<option value="DUR01">South Africa - Durban</option>
+<option value="JOH01">South Africa - Johannesburg</option>
+<option value="PRE01">South Africa - Pretoria</option>
+<option value="JUB01">South Sudan - Juba</option>
+<option value="MDR01">Spain - Madrid</option>
+<option value="CLB01">Sri Lanka - Colombo</option>
+<option value="HBM01">Sri Lanka - Hambantota</option>
+<option value="JFN01">Sri Lanka - Jaffna</option>
+<option value="KDY01">Sri Lanka - Kandy</option>
+<option value="KHT01">Sudan - Khartoum</option>
+<option value="PMR01">Suriname - Paramaribo</option>
+<option value="STK01">Sweden - Stockholm</option>
+<option value="BRN01">Switzerland - Berne</option>
+<option value="GNV01">Switzerland - Geneva</option>
+<option value="DMS01">Syria - Damascus</option>
+<option value="DSH01">Tajikistan - Dushanbe</option>
+<option value="DRS01">Tanzania - Dar es Salaam</option>
+<option value="ZNB01">Tanzania - Zanzibar</option>
+<option value="BGK01">Thailand - Bangkok</option>
+<option value="CHG01">Thailand - Chiangmai</option>
+<option value="POS01">Trinidad And Tobago - Port of Spain</option>
+<option value="TNS01">Tunisia - Tunis</option>
+<option value="ANK01">Turkey - Ankara</option>
+<option value="IST01">Turkey - Istanbul</option>
+<option value="ASH01">Turkmenistan - Ashgabat</option>
+<option value="KMP01">Uganda - Kampala</option>
+<option value="KYI01">Ukraine - Kyiv</option>
+<option value="ABU01">United Arab Emirates - Abu Dhabi</option>
+<option value="DBI01">United Arab Emirates - Dubai</option>
+<option value="BMN01">United Kingdom - Birmingham</option>
+<option value="EDB01">United Kingdom - Edinburgh</option>
+<option value="LON01">United Kingdom - London</option>
+<option value="ATL01">USA - Atlanta</option>
+<option value="CCG01">USA - Chicago</option>
+<option value="HST01">USA - Houston</option>
+<option value="NYK01">USA - New York</option>
+<option value="SFR01">USA - San Francisco</option>
+<option value="WSH01">USA - Washington DC</option>
+<option value="TAS01">Uzbekistan - Tashkent</option>
+<option value="CAR01">Venezuela - Caracas</option>
+<option value="HOI01">Vietnam - Hanoi</option>
+<option value="HCM01">Vietnam - Ho Chi Minh City</option>
+<option value="SAA01">Yemen - Sanaa</option>
+<option value="LUS01">Zambia - Lusaka</option>
+<option value="HRR01">Zimbabwe - Harare</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1230  refer line 31 -->
+    <div class="form-group next-level-cat 1230">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_4" name="Category"  data-select2-id="Category_4" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="50">Select next level category</option>
+    <option value="1232">Stuck mid waters</option>
+    <option value="1233">Arrest of sea crews</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="49" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_4-container"><span class="select2-selection__rendered" id="select2-Category_4-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 1231  refer line 32 -->
+    <div class="form-group next-level-cat 1231">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Mission">Mission</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Mission" ><option value="">Please select a Mission</option>
+<option value="HRT01">Afghanistan - Herat</option>
+<option value="JBD01">Afghanistan - Jalalabad</option>
+<option value="KBL00">Afghanistan - Kabul</option>
+<option value="KAN00">Afghanistan - Kandahar</option>
+<option value="MZR01">Afghanistan - Mazar-e-Sharif</option>
+<option value="ALG01">Algeria - Algiers</option>
+<option value="LUA01">Angola - Luanda</option>
+<option value="BNS01">Argentina - Buenos Aires</option>
+<option value="YVV01">Armenia - Yerevan</option>
+<option value="CNB01">Australia - Canberra</option>
+<option value="MLB01">Australia - Melbourne</option>
+<option value="PRT01">Australia - Perth</option>
+<option value="SYD01">Australia - Sydney</option>
+<option value="VIE01">Austria - Vienna</option>
+<option value="BKU01">Azerbaijan - Baku</option>
+<option value="BAH01">Bahrain - Manama</option>
+<option value="CHT01">Bangladesh - Chittagong</option>
+<option value="BDA01">Bangladesh - Dhaka</option>
+<option value="BRJ01">Bangladesh - Rajshahi</option>
+<option value="KHL01">Bangladesh-Khulna</option>
+<option value="SYL01">Bangladesh-Sylhet</option>
+<option value="MNS01">Belarus - Minsk</option>
+<option value="BRS01">Belgium - Brussels</option>
+<option value="PHU01">Bhutan - Phuentsholing</option>
+<option value="THI01">Bhutan - Thimphu</option>
+<option value="GAB01">Botswana - Gaborone</option>
+<option value="BRI01">Brazil - Brasilia</option>
+<option value="PAU01">Brazil - Sao Paulo</option>
+<option value="BRU01">Brunei Darussalam - Bandar Seri Begawan</option>
+<option value="SOF01">Bulgaria - Sofia</option>
+<option value="PHN01">Cambodia - Phnom Penh</option>
+<option value="OTT01">Canada - Ottawa</option>
+<option value="TOR01">Canada - Toronto</option>
+<option value="VAN01">Canada - Vancouver</option>
+<option value="SAN01">Chile - Santiago</option>
+<option value="BEI01">China - Beijing</option>
+<option value="GZG01">China - Guangzhou</option>
+<option value="HON01">China - Hong Kong</option>
+<option value="SHG01">China - Shanghai</option>
+<option value="BOG01">Colombia - Bogota</option>
+<option value="ABI01">Cote Divoire - Abidjan</option>
+<option value="ZAG01">Croatia - Zagreb</option>
+<option value="HAV01">Cuba - Havana</option>
+<option value="NIC01">Cyprus - Nicosia</option>
+<option value="CZP01">Czech Republic - Prague</option>
+<option value="KIN01">Democratic Republic of Congo - Kinshasa</option>
+<option value="DEN01">Denmark - Copenhagen</option>
+<option value="DJI01">Djibouti - Djibouti</option>
+<option value="PYN01">DPR Korea - Pyongyang</option>
+<option value="CAI01">Egypt - Cairo</option>
+<option value="MBB01">Eswatini-Mbabane</option>
+<option value="ETH01">Ethiopia - Addis Ababa</option>
+<option value="SUV01">Fiji - Suva</option>
+<option value="HEL01">Finland - Helsinki</option>
+<option value="PAR01">France - Paris</option>
+<option value="SAI01">France - Saint Denis</option>
+<option value="BER01">Germany - Berlin</option>
+<option value="FRA01">Germany - Frankfurt</option>
+<option value="HMG01">Germany - Hamburg</option>
+<option value="MUN01">Germany - Munich</option>
+<option value="GHA01">Ghana - Accra</option>
+<option value="GRE01">Greece - Athens</option>
+<option value="GTA01">Guatemala - Guatemala City</option>
+<option value="GTE01">Guyana - Georgetown</option>
+<option value="BPE01">Hungary - Budapest</option>
+<option value="REY01">Iceland - Reykjavik</option>
+<option value="BAI01">Indonesia - Bali</option>
+<option value="JAK01">Indonesia - Jakarta</option>
+<option value="MDE01">Indonesia - Medan</option>
+<option value="BDR01">Iran - Bandar Abbas</option>
+<option value="THR01">Iran - Tehran</option>
+<option value="ZAH01">Iran - Zahidan</option>
+<option value="BAG01">Iraq - Baghdad</option>
+<option value="DUB01">Ireland - Dublin</option>
+<option value="TEL01">Israel - Tel aviv</option>
+<option value="MLA01">Italy - Milan</option>
+<option value="ROM01">Italy - Rome</option>
+<option value="KNG01">Jamaica - Kingston</option>
+<option value="OSA01">Japan - Osaka-Kobe</option>
+<option value="TOK01">Japan - Tokyo</option>
+<option value="AMM01">Jordan - Amman</option>
+<option value="ALM01">Kazakhstan - Almaty</option>
+<option value="NUR01">Kazakhstan - Nur Sultan</option>
+<option value="MOM01">Kenya - Mombasa</option>
+<option value="NAI01">Kenya - Nairobi</option>
+<option value="KUW01">Kuwait - Kuwait City</option>
+<option value="BIS01">Kyrgyzstan - Bishkek</option>
+<option value="VIT01">Lao PDR - Vientiane</option>
+<option value="BET01">Lebanon - Beirut</option>
+<option value="ANT01">Madagascar - Antananarivo</option>
+<option value="LIL01">Malawi - Lilongwe</option>
+<option value="KLU01">Malaysia - Kuala Lumpur</option>
+<option value="MAE01">Maldives - Male</option>
+<option value="BMA01">Mali - Bamako</option>
+<option value="VAL01">Malta - Valletta</option>
+<option value="POR01">Mauritius - Port Louis</option>
+<option value="MEX01">Mexico - Mexico City</option>
+<option value="ULB01">Mongolia-Ulaanbaatar</option>
+<option value="RBT01">Morocco-Rabat</option>
+<option value="MAP01">Mozambique - Maputo</option>
+<option value="MND01">Myanmar - Mandalay</option>
+<option value="SIT01">Myanmar - Sittwe</option>
+<option value="YAN01">Myanmar - Yangon</option>
+<option value="WIN01">Namibia - Windhoek</option>
+<option value="BNJ01">Nepal - Birgunj</option>
+<option value="KTH01">Nepal - Kathmandu</option>
+<option value="HAG01">Netherlands - The Hague</option>
+<option value="WLN01">New Zealand - Wellington</option>
+<option value="NAM01">Niger - Niamey</option>
+<option value="ABJ01">Nigeria - Abuja</option>
+<option value="LAG01">Nigeria - Lagos</option>
+<option value="OSL01">Norway - Oslo</option>
+<option value="MSC01">Oman - Muscat</option>
+<option value="ISL01">Pakistan - Islamabad</option>
+<option value="PNM01">Panama - Panama</option>
+<option value="PAP01">Papua New Guinea - Port Moresby</option>
+<option value="LIM01">Peru - Lima</option>
+<option value="MNL01">Philippines - Manila</option>
+<option value="WAR01">Poland - Warsaw</option>
+<option value="LIS01">Portugal - Lisbon</option>
+<option value="DOA01">Qatar - Doha</option>
+<option value="SEO01">Republic of Korea-Seoul</option>
+<option value="BOH01">Romania - Bucharest</option>
+<option value="MOS01">Russian Federation - Moscow</option>
+<option value="VLA01">Russian Federation - St. Petersburg</option>
+<option value="VOK01">Russian Federation - Vladivostok</option>
+<option value="KIG01">Rwanda - Kigali</option>
+<option value="JED01">Saudi Arabia - Jeddah</option>
+<option value="RIY01">Saudi Arabia - Riyadh</option>
+<option value="DAA01">Senegal - Dakar</option>
+<option value="BED01">Serbia - Belgrade</option>
+<option value="MHE01">Seychelles - Victoria-Mahe</option>
+<option value="SIN01">Singapore - Singapore</option>
+<option value="BVA01">Slovakia - Bratislava</option>
+<option value="LJB01">Slovenia - Ljubljana</option>
+<option value="CPT01">South Africa - Cape Town</option>
+<option value="DUR01">South Africa - Durban</option>
+<option value="JOH01">South Africa - Johannesburg</option>
+<option value="PRE01">South Africa - Pretoria</option>
+<option value="JUB01">South Sudan - Juba</option>
+<option value="MDR01">Spain - Madrid</option>
+<option value="CLB01">Sri Lanka - Colombo</option>
+<option value="HBM01">Sri Lanka - Hambantota</option>
+<option value="JFN01">Sri Lanka - Jaffna</option>
+<option value="KDY01">Sri Lanka - Kandy</option>
+<option value="KHT01">Sudan - Khartoum</option>
+<option value="PMR01">Suriname - Paramaribo</option>
+<option value="STK01">Sweden - Stockholm</option>
+<option value="BRN01">Switzerland - Berne</option>
+<option value="GNV01">Switzerland - Geneva</option>
+<option value="DMS01">Syria - Damascus</option>
+<option value="DSH01">Tajikistan - Dushanbe</option>
+<option value="DRS01">Tanzania - Dar es Salaam</option>
+<option value="ZNB01">Tanzania - Zanzibar</option>
+<option value="BGK01">Thailand - Bangkok</option>
+<option value="CHG01">Thailand - Chiangmai</option>
+<option value="POS01">Trinidad And Tobago - Port of Spain</option>
+<option value="TNS01">Tunisia - Tunis</option>
+<option value="ANK01">Turkey - Ankara</option>
+<option value="IST01">Turkey - Istanbul</option>
+<option value="ASH01">Turkmenistan - Ashgabat</option>
+<option value="KMP01">Uganda - Kampala</option>
+<option value="KYI01">Ukraine - Kyiv</option>
+<option value="ABU01">United Arab Emirates - Abu Dhabi</option>
+<option value="DBI01">United Arab Emirates - Dubai</option>
+<option value="BMN01">United Kingdom - Birmingham</option>
+<option value="EDB01">United Kingdom - Edinburgh</option>
+<option value="LON01">United Kingdom - London</option>
+<option value="ATL01">USA - Atlanta</option>
+<option value="CCG01">USA - Chicago</option>
+<option value="HST01">USA - Houston</option>
+<option value="NYK01">USA - New York</option>
+<option value="SFR01">USA - San Francisco</option>
+<option value="WSH01">USA - Washington DC</option>
+<option value="TAS01">Uzbekistan - Tashkent</option>
+<option value="CAR01">Venezuela - Caracas</option>
+<option value="HOI01">Vietnam - Hanoi</option>
+<option value="HCM01">Vietnam - Ho Chi Minh City</option>
+<option value="SAA01">Yemen - Sanaa</option>
+<option value="LUS01">Zambia - Lusaka</option>
+<option value="HRR01">Zimbabwe - Harare</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1232  refer line 33 -->
+    <div class="form-group next-level-cat 1232">
+        <div class="row">
+            <label class="col-md-4 text-right"  for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_4" name="Category"  data-select2-id="Category_4" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="65">Select next level category</option>
+    <option value="1240">On Hold Passport Applications</option>
+    <option value="1241">Appointment Issues</option>
+    <option value="1242">Payment Refund Issues</option>
+    <option value="1243">Demand of extra documents by  PO/PSK/POPSK Staff, where its not required</option>
+    <option value="1244">Policy issues</option>
+    <option value="1245">Deletion of ECR Issues</option>
+    <option value="1246">Change / Correction in personal particulars</option>
+    <option value="1247">Lost/Damaged Passport</option>
+    <option value="1248">Delay in Issuance of passport</option>
+    <option value="1249">Complexity in Issuance of passport</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="64" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_4-container"><span class="select2-selection__rendered" id="select2-Category_4-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 1233  refer line 34 -->
+    <div class="form-group next-level-cat 1233">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_4" name="Category" data-select2-id="Category_4" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="80">Select next level category</option>
+    <option value="1300">Tatkaal fee collected but service not rendered</option>
+    <option value="1301">File put on Hold for police verification</option>
+    <option value="1302">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="79" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_4-container"><span class="select2-selection__rendered" id="select2-Category_4-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1234  refer line 35 -->
+    <div class="form-group next-level-cat 1234">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_4" name="Category"  data-select2-id="Category_4" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="88">Select next level category</option>
+    <option value="1303">On the basis of Police Verification Report of previous passport.</option>
+    <option value="1304">No Police Verification</option>
+    <option value="1305">Pre Police Verification</option>
+    <option value="1306">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="87" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_4-container"><span class="select2-selection__rendered" id="select2-Category_4-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1235  refer line 36 -->
+    <div class="form-group next-level-cat 1235">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_4" name="Category"  data-select2-id="Category_4" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="97">Select next level category</option>
+    <option value="1307">Return Undelivered</option>
+    <option value="1308">Delivered at Incorrect address</option>
+    <option value="1309">Delay in Delivery</option>
+    <option value="1310">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="96" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_4-container"><span class="select2-selection__rendered" id="select2-Category_4-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1236  refer line 37 -->
+    <div id="divPassportOffice" class="form-group next-level-cat 1236">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="PassportOffice">Name of Passport Office</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="PassportOffice" ><option value="">Please select a Name of Passport Office</option>
+<option value="AHMBD">Ahmedabad PO</option>
+<option value="AMTSR">Amritsar PO</option>
+<option value="BGLOR">Bangalore, PO</option>
+<option value="BARLY">Bareilly PO</option>
+<option value="BHOPL">Bhopal PO</option>
+<option value="BHBSR">Bhubaneshwar, PO</option>
+<option value="CHGRH">Chandigarh, PO</option>
+<option value="CHNNA">Chennai, PO</option>
+<option value="COHIN">Cochin PO</option>
+<option value="DHRDN">Dehradun  PO</option>
+<option value="PODLH">Delhi, PO</option>
+<option value="GZBAD">Ghaziabad, PO</option>
+<option value="GUWHT">Guwahati PO</option>
+<option value="HYBRD">Hyderabad, PO</option>
+<option value="JAIPR">Jaipur, PO</option>
+<option value="JALDH">Jalandhar, PO</option>
+<option value="JAMMU">Jammu, PO</option>
+<option value="POCAL">Kolkata, Kolkata</option>
+<option value="POKOZ">Kozhikode, PO</option>
+<option value="LKNOW">Lucknow, PO</option>
+<option value="MADRI">Madurai PO</option>
+<option value="MYMBI">Mumbai, PO</option>
+<option value="PONGP">Nagpur, PO</option>
+<option value="PANJI">Panaji, PO</option>
+<option value="VJADA">Passport Office Vijayawada</option>
+<option value="PATNA">Patna, PO</option>
+<option value="CMBTR">PO Coimbatore</option>
+<option value="PUNEP">Pune, PO</option>
+<option value="RAIPR">RAIPUR PO</option>
+<option value="RANCI">Ranchi, PO</option>
+<option value="SIMLA">Shimla, PO</option>
+<option value="POSGR">Srinagar, PO</option>
+<option value="SURAT">Surat, PO</option>
+<option value="TRCHY">Trichy, PO</option>
+<option value="POTRV">Trivendrum, PO</option>
+<option value="VIZAG">Visakhapatnam, PO</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1237  refer line 38 -->
+    <div class="form-group next-level-cat 1237">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_4" name="Category"  data-select2-id="Category_4" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="108">Select next level category</option>
+    <option value="1311">SMS service</option>
+    <option value="1312">Passport Cover</option>
+    <option value="1313">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="107" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_4-container"><span class="select2-selection__rendered" id="select2-Category_4-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1238  refer line 29 -->
+    <div id="divMission" class="form-group next-level-cat 1238">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Mission">Mission</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Mission" ><option value="">Please select a Mission</option>
+<option value="HRT01">Afghanistan - Herat</option>
+<option value="JBD01">Afghanistan - Jalalabad</option>
+<option value="KBL00">Afghanistan - Kabul</option>
+<option value="KAN00">Afghanistan - Kandahar</option>
+<option value="MZR01">Afghanistan - Mazar-e-Sharif</option>
+<option value="ALG01">Algeria - Algiers</option>
+<option value="LUA01">Angola - Luanda</option>
+<option value="BNS01">Argentina - Buenos Aires</option>
+<option value="YVV01">Armenia - Yerevan</option>
+<option value="CNB01">Australia - Canberra</option>
+<option value="MLB01">Australia - Melbourne</option>
+<option value="PRT01">Australia - Perth</option>
+<option value="SYD01">Australia - Sydney</option>
+<option value="VIE01">Austria - Vienna</option>
+<option value="BKU01">Azerbaijan - Baku</option>
+<option value="BAH01">Bahrain - Manama</option>
+<option value="CHT01">Bangladesh - Chittagong</option>
+<option value="BDA01">Bangladesh - Dhaka</option>
+<option value="BRJ01">Bangladesh - Rajshahi</option>
+<option value="KHL01">Bangladesh-Khulna</option>
+<option value="SYL01">Bangladesh-Sylhet</option>
+<option value="MNS01">Belarus - Minsk</option>
+<option value="BRS01">Belgium - Brussels</option>
+<option value="PHU01">Bhutan - Phuentsholing</option>
+<option value="THI01">Bhutan - Thimphu</option>
+<option value="GAB01">Botswana - Gaborone</option>
+<option value="BRI01">Brazil - Brasilia</option>
+<option value="PAU01">Brazil - Sao Paulo</option>
+<option value="BRU01">Brunei Darussalam - Bandar Seri Begawan</option>
+<option value="SOF01">Bulgaria - Sofia</option>
+<option value="PHN01">Cambodia - Phnom Penh</option>
+<option value="OTT01">Canada - Ottawa</option>
+<option value="TOR01">Canada - Toronto</option>
+<option value="VAN01">Canada - Vancouver</option>
+<option value="SAN01">Chile - Santiago</option>
+<option value="BEI01">China - Beijing</option>
+<option value="GZG01">China - Guangzhou</option>
+<option value="HON01">China - Hong Kong</option>
+<option value="SHG01">China - Shanghai</option>
+<option value="BOG01">Colombia - Bogota</option>
+<option value="ABI01">Cote Divoire - Abidjan</option>
+<option value="ZAG01">Croatia - Zagreb</option>
+<option value="HAV01">Cuba - Havana</option>
+<option value="NIC01">Cyprus - Nicosia</option>
+<option value="CZP01">Czech Republic - Prague</option>
+<option value="KIN01">Democratic Republic of Congo - Kinshasa</option>
+<option value="DEN01">Denmark - Copenhagen</option>
+<option value="DJI01">Djibouti - Djibouti</option>
+<option value="PYN01">DPR Korea - Pyongyang</option>
+<option value="CAI01">Egypt - Cairo</option>
+<option value="MBB01">Eswatini-Mbabane</option>
+<option value="ETH01">Ethiopia - Addis Ababa</option>
+<option value="SUV01">Fiji - Suva</option>
+<option value="HEL01">Finland - Helsinki</option>
+<option value="PAR01">France - Paris</option>
+<option value="SAI01">France - Saint Denis</option>
+<option value="BER01">Germany - Berlin</option>
+<option value="FRA01">Germany - Frankfurt</option>
+<option value="HMG01">Germany - Hamburg</option>
+<option value="MUN01">Germany - Munich</option>
+<option value="GHA01">Ghana - Accra</option>
+<option value="GRE01">Greece - Athens</option>
+<option value="GTA01">Guatemala - Guatemala City</option>
+<option value="GTE01">Guyana - Georgetown</option>
+<option value="BPE01">Hungary - Budapest</option>
+<option value="REY01">Iceland - Reykjavik</option>
+<option value="BAI01">Indonesia - Bali</option>
+<option value="JAK01">Indonesia - Jakarta</option>
+<option value="MDE01">Indonesia - Medan</option>
+<option value="BDR01">Iran - Bandar Abbas</option>
+<option value="THR01">Iran - Tehran</option>
+<option value="ZAH01">Iran - Zahidan</option>
+<option value="BAG01">Iraq - Baghdad</option>
+<option value="DUB01">Ireland - Dublin</option>
+<option value="TEL01">Israel - Tel aviv</option>
+<option value="MLA01">Italy - Milan</option>
+<option value="ROM01">Italy - Rome</option>
+<option value="KNG01">Jamaica - Kingston</option>
+<option value="OSA01">Japan - Osaka-Kobe</option>
+<option value="TOK01">Japan - Tokyo</option>
+<option value="AMM01">Jordan - Amman</option>
+<option value="ALM01">Kazakhstan - Almaty</option>
+<option value="NUR01">Kazakhstan - Nur Sultan</option>
+<option value="MOM01">Kenya - Mombasa</option>
+<option value="NAI01">Kenya - Nairobi</option>
+<option value="KUW01">Kuwait - Kuwait City</option>
+<option value="BIS01">Kyrgyzstan - Bishkek</option>
+<option value="VIT01">Lao PDR - Vientiane</option>
+<option value="BET01">Lebanon - Beirut</option>
+<option value="ANT01">Madagascar - Antananarivo</option>
+<option value="LIL01">Malawi - Lilongwe</option>
+<option value="KLU01">Malaysia - Kuala Lumpur</option>
+<option value="MAE01">Maldives - Male</option>
+<option value="BMA01">Mali - Bamako</option>
+<option value="VAL01">Malta - Valletta</option>
+<option value="POR01">Mauritius - Port Louis</option>
+<option value="MEX01">Mexico - Mexico City</option>
+<option value="ULB01">Mongolia-Ulaanbaatar</option>
+<option value="RBT01">Morocco-Rabat</option>
+<option value="MAP01">Mozambique - Maputo</option>
+<option value="MND01">Myanmar - Mandalay</option>
+<option value="SIT01">Myanmar - Sittwe</option>
+<option value="YAN01">Myanmar - Yangon</option>
+<option value="WIN01">Namibia - Windhoek</option>
+<option value="BNJ01">Nepal - Birgunj</option>
+<option value="KTH01">Nepal - Kathmandu</option>
+<option value="HAG01">Netherlands - The Hague</option>
+<option value="WLN01">New Zealand - Wellington</option>
+<option value="NAM01">Niger - Niamey</option>
+<option value="ABJ01">Nigeria - Abuja</option>
+<option value="LAG01">Nigeria - Lagos</option>
+<option value="OSL01">Norway - Oslo</option>
+<option value="MSC01">Oman - Muscat</option>
+<option value="ISL01">Pakistan - Islamabad</option>
+<option value="PNM01">Panama - Panama</option>
+<option value="PAP01">Papua New Guinea - Port Moresby</option>
+<option value="LIM01">Peru - Lima</option>
+<option value="MNL01">Philippines - Manila</option>
+<option value="WAR01">Poland - Warsaw</option>
+<option value="LIS01">Portugal - Lisbon</option>
+<option value="DOA01">Qatar - Doha</option>
+<option value="SEO01">Republic of Korea-Seoul</option>
+<option value="BOH01">Romania - Bucharest</option>
+<option value="MOS01">Russian Federation - Moscow</option>
+<option value="VLA01">Russian Federation - St. Petersburg</option>
+<option value="VOK01">Russian Federation - Vladivostok</option>
+<option value="KIG01">Rwanda - Kigali</option>
+<option value="JED01">Saudi Arabia - Jeddah</option>
+<option value="RIY01">Saudi Arabia - Riyadh</option>
+<option value="DAA01">Senegal - Dakar</option>
+<option value="BED01">Serbia - Belgrade</option>
+<option value="MHE01">Seychelles - Victoria-Mahe</option>
+<option value="SIN01">Singapore - Singapore</option>
+<option value="BVA01">Slovakia - Bratislava</option>
+<option value="LJB01">Slovenia - Ljubljana</option>
+<option value="CPT01">South Africa - Cape Town</option>
+<option value="DUR01">South Africa - Durban</option>
+<option value="JOH01">South Africa - Johannesburg</option>
+<option value="PRE01">South Africa - Pretoria</option>
+<option value="JUB01">South Sudan - Juba</option>
+<option value="MDR01">Spain - Madrid</option>
+<option value="CLB01">Sri Lanka - Colombo</option>
+<option value="HBM01">Sri Lanka - Hambantota</option>
+<option value="JFN01">Sri Lanka - Jaffna</option>
+<option value="KDY01">Sri Lanka - Kandy</option>
+<option value="KHT01">Sudan - Khartoum</option>
+<option value="PMR01">Suriname - Paramaribo</option>
+<option value="STK01">Sweden - Stockholm</option>
+<option value="BRN01">Switzerland - Berne</option>
+<option value="GNV01">Switzerland - Geneva</option>
+<option value="DMS01">Syria - Damascus</option>
+<option value="DSH01">Tajikistan - Dushanbe</option>
+<option value="DRS01">Tanzania - Dar es Salaam</option>
+<option value="ZNB01">Tanzania - Zanzibar</option>
+<option value="BGK01">Thailand - Bangkok</option>
+<option value="CHG01">Thailand - Chiangmai</option>
+<option value="POS01">Trinidad And Tobago - Port of Spain</option>
+<option value="TNS01">Tunisia - Tunis</option>
+<option value="ANK01">Turkey - Ankara</option>
+<option value="IST01">Turkey - Istanbul</option>
+<option value="ASH01">Turkmenistan - Ashgabat</option>
+<option value="KMP01">Uganda - Kampala</option>
+<option value="KYI01">Ukraine - Kyiv</option>
+<option value="ABU01">United Arab Emirates - Abu Dhabi</option>
+<option value="DBI01">United Arab Emirates - Dubai</option>
+<option value="BMN01">United Kingdom - Birmingham</option>
+<option value="EDB01">United Kingdom - Edinburgh</option>
+<option value="LON01">United Kingdom - London</option>
+<option value="ATL01">USA - Atlanta</option>
+<option value="CCG01">USA - Chicago</option>
+<option value="HST01">USA - Houston</option>
+<option value="NYK01">USA - New York</option>
+<option value="SFR01">USA - San Francisco</option>
+<option value="WSH01">USA - Washington DC</option>
+<option value="TAS01">Uzbekistan - Tashkent</option>
+<option value="CAR01">Venezuela - Caracas</option>
+<option value="HOI01">Vietnam - Hanoi</option>
+<option value="HCM01">Vietnam - Ho Chi Minh City</option>
+<option value="SAA01">Yemen - Sanaa</option>
+<option value="LUS01">Zambia - Lusaka</option>
+<option value="HRR01">Zimbabwe - Harare</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 1239  refer line 29 -->
+    <div id="divPolicyNo" class="form-group next-level-cat 1239">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="PolicyNo">Insurance Policy Number</label>
+                    <div class="col-md-6">
+                        <input autocomplete="off" class="form-control" id="PolicyNo" name="PolicyNo" placeholder="Please Enter Insurance Policy Number"  type="text" value="">                                                                                                            </div>
+        </div>
+    </div>
+    <!-- Next level category of 1240  refer line 29 -->
+    <div class="form-group next-level-cat 1240">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_4" name="Category"  data-select2-id="Category_4" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="122">Select next level category</option>
+    <option value="1325">Domestic Violence/ Dowry Harassment</option>
+    <option value="1326">Desertion/ Abandonment</option>
+    <option value="1327">Maintence Amount Not Received</option>
+    <option value="1328">Ex-Parte Divorce</option>
+    <option value="1329">Grievances of Indian Spouse residing Abroad</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="121" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_4-container"><span class="select2-selection__rendered" id="select2-Category_4-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 1241  refer line 29 -->
+    <div id="divMission" class="form-group next-level-cat 1241">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Mission">Mission</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Mission" ><option value="">Please select a Mission</option>
+<option value="HRT01">Afghanistan - Herat</option>
+<option value="JBD01">Afghanistan - Jalalabad</option>
+<option value="KBL00">Afghanistan - Kabul</option>
+<option value="KAN00">Afghanistan - Kandahar</option>
+<option value="MZR01">Afghanistan - Mazar-e-Sharif</option>
+<option value="ALG01">Algeria - Algiers</option>
+<option value="LUA01">Angola - Luanda</option>
+<option value="BNS01">Argentina - Buenos Aires</option>
+<option value="YVV01">Armenia - Yerevan</option>
+<option value="CNB01">Australia - Canberra</option>
+<option value="MLB01">Australia - Melbourne</option>
+<option value="PRT01">Australia - Perth</option>
+<option value="SYD01">Australia - Sydney</option>
+<option value="VIE01">Austria - Vienna</option>
+<option value="BKU01">Azerbaijan - Baku</option>
+<option value="BAH01">Bahrain - Manama</option>
+<option value="CHT01">Bangladesh - Chittagong</option>
+<option value="BDA01">Bangladesh - Dhaka</option>
+<option value="BRJ01">Bangladesh - Rajshahi</option>
+<option value="KHL01">Bangladesh-Khulna</option>
+<option value="SYL01">Bangladesh-Sylhet</option>
+<option value="MNS01">Belarus - Minsk</option>
+<option value="BRS01">Belgium - Brussels</option>
+<option value="PHU01">Bhutan - Phuentsholing</option>
+<option value="THI01">Bhutan - Thimphu</option>
+<option value="GAB01">Botswana - Gaborone</option>
+<option value="BRI01">Brazil - Brasilia</option>
+<option value="PAU01">Brazil - Sao Paulo</option>
+<option value="BRU01">Brunei Darussalam - Bandar Seri Begawan</option>
+<option value="SOF01">Bulgaria - Sofia</option>
+<option value="PHN01">Cambodia - Phnom Penh</option>
+<option value="OTT01">Canada - Ottawa</option>
+<option value="TOR01">Canada - Toronto</option>
+<option value="VAN01">Canada - Vancouver</option>
+<option value="SAN01">Chile - Santiago</option>
+<option value="BEI01">China - Beijing</option>
+<option value="GZG01">China - Guangzhou</option>
+<option value="HON01">China - Hong Kong</option>
+<option value="SHG01">China - Shanghai</option>
+<option value="BOG01">Colombia - Bogota</option>
+<option value="ABI01">Cote Divoire - Abidjan</option>
+<option value="ZAG01">Croatia - Zagreb</option>
+<option value="HAV01">Cuba - Havana</option>
+<option value="NIC01">Cyprus - Nicosia</option>
+<option value="CZP01">Czech Republic - Prague</option>
+<option value="KIN01">Democratic Republic of Congo - Kinshasa</option>
+<option value="DEN01">Denmark - Copenhagen</option>
+<option value="DJI01">Djibouti - Djibouti</option>
+<option value="PYN01">DPR Korea - Pyongyang</option>
+<option value="CAI01">Egypt - Cairo</option>
+<option value="MBB01">Eswatini-Mbabane</option>
+<option value="ETH01">Ethiopia - Addis Ababa</option>
+<option value="SUV01">Fiji - Suva</option>
+<option value="HEL01">Finland - Helsinki</option>
+<option value="PAR01">France - Paris</option>
+<option value="SAI01">France - Saint Denis</option>
+<option value="BER01">Germany - Berlin</option>
+<option value="FRA01">Germany - Frankfurt</option>
+<option value="HMG01">Germany - Hamburg</option>
+<option value="MUN01">Germany - Munich</option>
+<option value="GHA01">Ghana - Accra</option>
+<option value="GRE01">Greece - Athens</option>
+<option value="GTA01">Guatemala - Guatemala City</option>
+<option value="GTE01">Guyana - Georgetown</option>
+<option value="BPE01">Hungary - Budapest</option>
+<option value="REY01">Iceland - Reykjavik</option>
+<option value="BAI01">Indonesia - Bali</option>
+<option value="JAK01">Indonesia - Jakarta</option>
+<option value="MDE01">Indonesia - Medan</option>
+<option value="BDR01">Iran - Bandar Abbas</option>
+<option value="THR01">Iran - Tehran</option>
+<option value="ZAH01">Iran - Zahidan</option>
+<option value="BAG01">Iraq - Baghdad</option>
+<option value="DUB01">Ireland - Dublin</option>
+<option value="TEL01">Israel - Tel aviv</option>
+<option value="MLA01">Italy - Milan</option>
+<option value="ROM01">Italy - Rome</option>
+<option value="KNG01">Jamaica - Kingston</option>
+<option value="OSA01">Japan - Osaka-Kobe</option>
+<option value="TOK01">Japan - Tokyo</option>
+<option value="AMM01">Jordan - Amman</option>
+<option value="ALM01">Kazakhstan - Almaty</option>
+<option value="NUR01">Kazakhstan - Nur Sultan</option>
+<option value="MOM01">Kenya - Mombasa</option>
+<option value="NAI01">Kenya - Nairobi</option>
+<option value="KUW01">Kuwait - Kuwait City</option>
+<option value="BIS01">Kyrgyzstan - Bishkek</option>
+<option value="VIT01">Lao PDR - Vientiane</option>
+<option value="BET01">Lebanon - Beirut</option>
+<option value="ANT01">Madagascar - Antananarivo</option>
+<option value="LIL01">Malawi - Lilongwe</option>
+<option value="KLU01">Malaysia - Kuala Lumpur</option>
+<option value="MAE01">Maldives - Male</option>
+<option value="BMA01">Mali - Bamako</option>
+<option value="VAL01">Malta - Valletta</option>
+<option value="POR01">Mauritius - Port Louis</option>
+<option value="MEX01">Mexico - Mexico City</option>
+<option value="ULB01">Mongolia-Ulaanbaatar</option>
+<option value="RBT01">Morocco-Rabat</option>
+<option value="MAP01">Mozambique - Maputo</option>
+<option value="MND01">Myanmar - Mandalay</option>
+<option value="SIT01">Myanmar - Sittwe</option>
+<option value="YAN01">Myanmar - Yangon</option>
+<option value="WIN01">Namibia - Windhoek</option>
+<option value="BNJ01">Nepal - Birgunj</option>
+<option value="KTH01">Nepal - Kathmandu</option>
+<option value="HAG01">Netherlands - The Hague</option>
+<option value="WLN01">New Zealand - Wellington</option>
+<option value="NAM01">Niger - Niamey</option>
+<option value="ABJ01">Nigeria - Abuja</option>
+<option value="LAG01">Nigeria - Lagos</option>
+<option value="OSL01">Norway - Oslo</option>
+<option value="MSC01">Oman - Muscat</option>
+<option value="ISL01">Pakistan - Islamabad</option>
+<option value="PNM01">Panama - Panama</option>
+<option value="PAP01">Papua New Guinea - Port Moresby</option>
+<option value="LIM01">Peru - Lima</option>
+<option value="MNL01">Philippines - Manila</option>
+<option value="WAR01">Poland - Warsaw</option>
+<option value="LIS01">Portugal - Lisbon</option>
+<option value="DOA01">Qatar - Doha</option>
+<option value="SEO01">Republic of Korea-Seoul</option>
+<option value="BOH01">Romania - Bucharest</option>
+<option value="MOS01">Russian Federation - Moscow</option>
+<option value="VLA01">Russian Federation - St. Petersburg</option>
+<option value="VOK01">Russian Federation - Vladivostok</option>
+<option value="KIG01">Rwanda - Kigali</option>
+<option value="JED01">Saudi Arabia - Jeddah</option>
+<option value="RIY01">Saudi Arabia - Riyadh</option>
+<option value="DAA01">Senegal - Dakar</option>
+<option value="BED01">Serbia - Belgrade</option>
+<option value="MHE01">Seychelles - Victoria-Mahe</option>
+<option value="SIN01">Singapore - Singapore</option>
+<option value="BVA01">Slovakia - Bratislava</option>
+<option value="LJB01">Slovenia - Ljubljana</option>
+<option value="CPT01">South Africa - Cape Town</option>
+<option value="DUR01">South Africa - Durban</option>
+<option value="JOH01">South Africa - Johannesburg</option>
+<option value="PRE01">South Africa - Pretoria</option>
+<option value="JUB01">South Sudan - Juba</option>
+<option value="MDR01">Spain - Madrid</option>
+<option value="CLB01">Sri Lanka - Colombo</option>
+<option value="HBM01">Sri Lanka - Hambantota</option>
+<option value="JFN01">Sri Lanka - Jaffna</option>
+<option value="KDY01">Sri Lanka - Kandy</option>
+<option value="KHT01">Sudan - Khartoum</option>
+<option value="PMR01">Suriname - Paramaribo</option>
+<option value="STK01">Sweden - Stockholm</option>
+<option value="BRN01">Switzerland - Berne</option>
+<option value="GNV01">Switzerland - Geneva</option>
+<option value="DMS01">Syria - Damascus</option>
+<option value="DSH01">Tajikistan - Dushanbe</option>
+<option value="DRS01">Tanzania - Dar es Salaam</option>
+<option value="ZNB01">Tanzania - Zanzibar</option>
+<option value="BGK01">Thailand - Bangkok</option>
+<option value="CHG01">Thailand - Chiangmai</option>
+<option value="POS01">Trinidad And Tobago - Port of Spain</option>
+<option value="TNS01">Tunisia - Tunis</option>
+<option value="ANK01">Turkey - Ankara</option>
+<option value="IST01">Turkey - Istanbul</option>
+<option value="ASH01">Turkmenistan - Ashgabat</option>
+<option value="KMP01">Uganda - Kampala</option>
+<option value="KYI01">Ukraine - Kyiv</option>
+<option value="ABU01">United Arab Emirates - Abu Dhabi</option>
+<option value="DBI01">United Arab Emirates - Dubai</option>
+<option value="BMN01">United Kingdom - Birmingham</option>
+<option value="EDB01">United Kingdom - Edinburgh</option>
+<option value="LON01">United Kingdom - London</option>
+<option value="ATL01">USA - Atlanta</option>
+<option value="CCG01">USA - Chicago</option>
+<option value="HST01">USA - Houston</option>
+<option value="NYK01">USA - New York</option>
+<option value="SFR01">USA - San Francisco</option>
+<option value="WSH01">USA - Washington DC</option>
+<option value="TAS01">Uzbekistan - Tashkent</option>
+<option value="CAR01">Venezuela - Caracas</option>
+<option value="HOI01">Vietnam - Hanoi</option>
+<option value="HCM01">Vietnam - Ho Chi Minh City</option>
+<option value="SAA01">Yemen - Sanaa</option>
+<option value="LUS01">Zambia - Lusaka</option>
+<option value="HRR01">Zimbabwe - Harare</option>
+</select>                                                    </div>
+        </div>
+    </div>
+    <!-- Next level category of 1242  refer line 29 -->
+    <div class="form-group next-level-cat 1242">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_4" name="Category"  data-select2-id="Category_4" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="134">Select next level category</option>
+    <option value="1338">Property related issues</option>
+    <option value="1339">Matter related to OCI Card Holders</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="133" style="width: 603.688px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_4-container"><span class="select2-selection__rendered" id="select2-Category_4-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 1243  refer line 29 -->
+    <div id="divName" class="form-group next-level-cat 1243">
+        <div class="row">
+                    <label class="col-md-4 text-right" for="Name">Name</label>
+                    <div class="col-md-6">
+                        <input autocomplete="off" class="form-control" id="Name" name="Name" placeholder="Please Enter Name" type="text" value="">                                                                                                            </div>
+        </div>
+    </div>
+    <!--Grievance-->
+    <div class="form-group grievance 1244">
+      <div class="row">
+          <label class="col-md-4 text-right" for="Category">Describe your Grievance here :</label>
+          <div class="col-md-6">
+               <textarea autocomplete="off" class="form-control" cols="50" id="Remarks" maxlength="500" name="Remarks" placeholder="Please Enter Text of Grievance (Remarks)"  rows="5" style="resize: none"></textarea><br>
+               <span class="text-info">Maximum 500 characters are allowed in description.</span>
+          </div>
+      </div>
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Attach Files related to Grievance (only one PDF file upto 4MB):</label>
+          <div class="col-md-6">
+<%# <input type="file" id="myfile" name="uploadfile"> %>
+<input name="uploadfile" type="file" multiple="" class="inputFileHidden">
+          </div>
+
+      </div>
+      <div style="text-align: center;">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  <input type="text" id="Main_Cat_Value" style="visibility:hidden;" name="Main_Cat_Value" value="">
+  <input type="text" id="Sub_Cat_Value" style="visibility:hidden;" name="Sub_Cat_Value" value="">
+  <input type="text" id="" style="visibility:hidden;" name="Mini_Value" value="<%= Ministry %>">
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  $("document").ready(function(){
+
+      $("#Category_2").change(function(){
+          $(this).find("option:selected").each(function(){
+              var optionValue = $(this).attr("value");
+              if(optionValue){
+                  $(".next-level-cat").not("." + optionValue).hide();
+                  $("." + optionValue).show();
+                  $("#Main_Cat_Value").attr("value", $(this).text());
+              } else{
+                  $(".next-level-cat").hide();
+              }
+
+          });
+      }).change();
+
+  });
+
+  </script>
+  <script>
+  $("document").ready(function(){
+      $(".next-level-cat").change(function(){
+          $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+              $(".grievance").show();
+              $("#Sub_Cat_Value").attr("value", $(this).text());
+            }
+            });
+
+      }).change();
+      });
+  </script>
+  <%-include("partials/footer")-%>

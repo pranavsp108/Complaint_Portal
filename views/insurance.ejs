@@ -1,0 +1,342 @@
+<%-include("partials/header")-%>
+
+<div class="type" class="complaintType">
+  <br><br>
+
+  <br><br>
+  <div class="card">
+    <h3 class="card-header">Grievance registration form</h3>
+    <div class="card-body">
+      <form class="" action="/organization/insurance1" enctype="multipart/form-data" method="post">
+      <div class="card-simple">
+        <h5 class="card-title" style="text-align:center;padding:10px; color:#086972;">Please note : If specific information related to a service is not available / known, select Others/Misc. option for lodging of grievance.</h5>
+      </div>
+
+      <div class="form-group">
+                          <div class="row">
+                              <label class="col-md-4 text-right " for="Category">Ministry / Department : </label>
+                              <div class="col-md-6">
+                                <p><%= Ministry %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select main category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_2" name="Category" data-select2-id="Category_2" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="2">Please select main category</option>
+<option value="354">Allegation on Corruption/Malpractice</option>
+<option value="355">Deficiency in Customer Service Related</option>
+<option value="356">Fraud</option>
+<option value="357">Agents and Surveyors Related</option>
+<option value="358">Misrepresentation by Agents</option>
+<option value="359">Non-settlement/Delay in Settlement/Less Settlement of Claims</option>
+<option value="360">Pradhan Mantri Vaya Vandana Yojana</option>
+<option value="361">Pradhan Mantri Suraksha Bima Yojna</option>
+<option value="362">Pradhan Mantri Jeevan Jyoti Bima Yojana</option>
+<option value="363">Service Matters Related</option>
+<option value="364">Pension/Retirement Benefits Related</option>
+<option value="365">Miscellaneous/Others</option>
+</select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 510.5px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_2-container"><span class="select2-selection__rendered" id="select2-Category_2-container" role="textbox" aria-readonly="true" title="Please select main category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+      <!-- Next level category of 62  refer line 28 -->
+      <div id="divInsuranceCompany" class="form-group next-level-cat 354">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="InsuranceCompany">Insurance Company</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="InsuranceCompany" ><option value="">Please select a Insurance Company</option>
+<option value="IRDAH">Insurance Regulatory and Development Authority</option>
+<option value="GIPSA">General Insurance (Public Sector) Association of India</option>
+<option value="LICCO">Life Insurance Corporation of India</option>
+<option value="AICIL">Agriculture Insurance Company of India
+Ltd.</option>
+<option value="OICLN">Oriental Insurance Co. Ltd.</option>
+<option value="UIICL">United India Insurance Company Ltd.</option>
+<option value="GICOI">General Insurance Corporation of India</option>
+<option value="NIACL">The New
+India  Assurance Co. Ltd.</option>
+<option value="NICLK">National Insurance Company Limited</option>
+<option value="IRDAH">Insurance Regulatory &amp; Development Authority of India</option>
+<option value="OTHER">Other/Private Sector Insurance Company.</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+      <!-- Next level category of 63  refer line 29 -->
+      <div class="form-group next-level-cat 355">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="33">Select next level category</option>
+    <option value="366">Non-payment/Delay in payment of Compensations/Refunds</option>
+    <option value="367">Delay in transfer of Policy</option>
+    <option value="368">Haraasment/Misbehaviour/Non-response from Staff</option>
+    <option value="369">Non receipt of policy bond</option>
+    <option value="370">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="32" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 64  refer line 30 -->
+    <div id="divInsuranceCompany" class="form-group next-level-cat 356">
+      <div class="row">
+                  <label class="col-md-4 text-right " for="InsuranceCompany">Insurance Company</label>
+                  <div class="col-md-6">
+                                                                              <select autocomplete="off" class="form-control" id="ddl" name="InsuranceCompany" ><option value="">Please select a Insurance Company</option>
+<option value="IRDAH">Insurance Regulatory and Development Authority</option>
+<option value="GIPSA">General Insurance (Public Sector) Association of India</option>
+<option value="LICCO">Life Insurance Corporation of India</option>
+<option value="AICIL">Agriculture Insurance Company of India
+Ltd.</option>
+<option value="OICLN">Oriental Insurance Co. Ltd.</option>
+<option value="UIICL">United India Insurance Company Ltd.</option>
+<option value="GICOI">General Insurance Corporation of India</option>
+<option value="NIACL">The New
+India  Assurance Co. Ltd.</option>
+<option value="NICLK">National Insurance Company Limited</option>
+<option value="IRDAH">Insurance Regulatory &amp; Development Authority of India</option>
+<option value="OTHER">Other/Private Sector Insurance Company.</option>
+</select>                                                    </div>
+      </div>
+  </div>
+
+    <!-- Next level category of 65  refer line 31 -->
+    <div class="form-group next-level-cat 357">
+      <div class="row">
+          <label class="col-md-4 text-right" for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category" data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="48">Select next level category</option>
+  <option value="371">Non-renewal of licence</option>
+  <option value="372">Non-payment of gratuity</option>
+  <option value="373">Non-payment/delay in payment of Commission</option>
+  <option value="374">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="47" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+    <!-- Next level category of 66  refer line 32 -->
+    <div class="form-group next-level-cat 358">
+      <div class="row">
+          <label class="col-md-4 text-right" for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="60">Select next level category</option>
+  <option value="375">Payment received from the customer but not deposited or deposited with delay in Insurance Company</option>
+  <option value="376">Mis-selling of Policy</option>
+  <option value="377">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="59" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+    <!-- Next level category of 67  refer line 33 -->
+    <div class="form-group next-level-cat 359">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="68">Select next level category</option>
+  <option value="378">Life Insurance Claim</option>
+  <option value="379">Non-life/General Insurance Claim</option>
+  <option value="380">Non-payment of penal interest of dealyed period</option>
+  <option value="381">Annuity Claim</option>
+  <option value="382">Accidental Claim</option>
+  <option value="383">Fasal Bima Yojana Related</option>
+  <option value="384">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="67" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+    <!-- Next level category of 68  refer line 34 -->
+    <div id="divInsuranceCompany" class="form-group next-level-cat 360">
+      <div class="row">
+                  <label class="col-md-4 text-right " for="InsuranceCompany">Insurancy Company</label>
+                  <div class="col-md-6">
+                                                                              <select autocomplete="off" class="form-control" id="ddl" name="InsuranceCompany" ><option value="">Please select a Insurancy Company</option>
+<option value="LICCO">Life Insurance Corporation of India</option>
+<option value="AICIL">Agriculture Insurance Company of India
+Ltd.</option>
+<option value="OICLN">Oriental Insurance Co. Ltd.</option>
+<option value="UIICL">United India Insurance Company Ltd.</option>
+<option value="GICOI">General Insurance Corporation of India</option>
+<option value="NIACL">The New
+India  Assurance Co. Ltd.</option>
+<option value="NICLK">National Insurance Company Limited</option>
+<option value="IRDAH">Insurance Regulatory &amp; Development Authority of India</option>
+<option value="OTHER">Other/Private Sector Insurance Company.</option>
+</select>                                                    </div>
+      </div>
+  </div>
+
+    <!-- Next level category of 69  refer line 35 -->
+    <div class="form-group next-level-cat 361">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="82">Select next level category</option>
+  <option value="385">Grievance against Bank</option>
+  <option value="386">Grievance against Insurance Company</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="81" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+
+    <!-- Next level category of 70  refer line 36 -->
+    <div class="form-group next-level-cat 362">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="100">Select next level category</option>
+  <option value="387">Grievance against Bank</option>
+  <option value="388">Grievance against Insurance Company</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="99" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+
+    <!-- Next level category of 71  refer line 37 -->
+    <div id="divInsuranceCompany" class="form-group next-level-cat 363">
+      <div class="row">
+                  <label class="col-md-4 text-right " for="InsuranceCompany">Insurance Company</label>
+                  <div class="col-md-6">
+                                                                              <select autocomplete="off" class="form-control" id="ddl" name="InsuranceCompany" ><option value="">Please select a Insurance Company</option>
+<option value="IRDAH">Insurance Regulatory and Development Authority</option>
+<option value="GIPSA">General Insurance (Public Sector) Association of India</option>
+<option value="LICCO">Life Insurance Corporation of India</option>
+<option value="AICIL">Agriculture Insurance Company of India
+Ltd.</option>
+<option value="OICLN">Oriental Insurance Co. Ltd.</option>
+<option value="UIICL">United India Insurance Company Ltd.</option>
+<option value="GICOI">General Insurance Corporation of India</option>
+<option value="NIACL">The New
+India  Assurance Co. Ltd.</option>
+<option value="NICLK">National Insurance Company Limited</option>
+<option value="IRDAH">Insurance Regulatory &amp; Development Authority of India</option>
+<option value="OTHER">Other/Private Sector Insurance Company.</option>
+</select>                                                    </div>
+      </div>
+  </div>
+
+    <!-- Next level category of 72  refer line 38 -->
+    <div class="form-group next-level-cat 364">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Select next level category</label>
+          <div class="col-md-6">
+              <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="131">Select next level category</option>
+  <option value="389">Non-commencement of Pesnion/Family Pension</option>
+  <option value="390">Non-submission of Life Certificate</option>
+  <option value="391">Non-payment of revised pension/arrears</option>
+  <option value="392">Non-sanction of Pension Loan</option>
+  <option value="393">Delay/Non-transfer of pension Account</option>
+  <option value="394">Non-restoration of Commuted Pension</option>
+  <option value="395">Less payment of Pension</option>
+  <option value="396">Excess Recovery of Pension</option>
+  <option value="397">Others</option>
+  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="130" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+          </div>
+      </div>
+  </div>
+
+    <!-- Next level category of 73  refer line 29 -->
+    <div id="divInsuranceCompany" class="form-group next-level-cat 365">
+      <div class="row">
+                  <label class="col-md-4 text-right " for="InsuranceCompany">Insurance Company</label>
+                  <div class="col-md-6">
+                                                                              <select autocomplete="off" class="form-control" id="ddl" name="InsuranceCompany" ><option value="">Please select a Insurance Company</option>
+<option value="IRDAH">Insurance Regulatory and Development Authority</option>
+<option value="GIPSA">General Insurance (Public Sector) Association of India</option>
+<option value="LICCO">Life Insurance Corporation of India</option>
+<option value="AICIL">Agriculture Insurance Company of India
+Ltd.</option>
+<option value="OICLN">Oriental Insurance Co. Ltd.</option>
+<option value="UIICL">United India Insurance Company Ltd.</option>
+<option value="GICOI">General Insurance Corporation of India</option>
+<option value="NIACL">The New
+India  Assurance Co. Ltd.</option>
+<option value="NICLK">National Insurance Company Limited</option>
+<option value="IRDAH">Insurance Regulatory &amp; Development Authority of India</option>
+<option value="OTHER">Other/Private Sector Insurance Company.</option>
+</select>                                                    </div>
+      </div>
+  </div>
+
+  <!--Grievance-->
+  <div class="form-group grievance 365">
+    <div class="row">
+        <label class="col-md-4 text-right " for="Category">Describe your Grievance here :</label>
+        <div class="col-md-6">
+             <textarea autocomplete="off" class="form-control" cols="50" id="Remarks" maxlength="500" name="Remarks" placeholder="Please Enter Text of Grievance (Remarks)"  rows="5" style="resize: none"></textarea><br>
+             <span class="text-info">Maximum 500 characters are allowed in description.</span>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-md-4 text-right " for="Category">Attach Files related to Grievance (only one PDF file upto 4MB):</label>
+        <div class="col-md-6">
+<%# <input type="file" id="myfile" name="uploadfile"> %>
+<input name="uploadfile" type="file" multiple="" class="inputFileHidden">
+        </div>
+
+    </div>
+    <div style="text-align: center;">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+<input type="text" id="Main_Cat_Value" style="visibility:hidden;" name="Main_Cat_Value" value="">
+<input type="text" id="Sub_Cat_Value" style="visibility:hidden;" name="Sub_Cat_Value" value="">
+<input type="text" id="" style="visibility:hidden;" name="Mini_Value" value="<%= Ministry %>">
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$("document").ready(function(){
+
+    $("#Category_2").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".next-level-cat").not("." + optionValue).hide();
+                $("." + optionValue).show();
+                $("#Main_Cat_Value").attr("value", $(this).text());
+            } else{
+                $(".next-level-cat").hide();
+            }
+
+        });
+    }).change();
+
+});
+
+</script>
+<script>
+$("document").ready(function(){
+    $(".next-level-cat").change(function(){
+        $(this).find("option:selected").each(function(){
+          var optionValue = $(this).attr("value");
+          if(optionValue){
+            $(".grievance").show();
+            $("#Sub_Cat_Value").attr("value", $(this).text());
+          }
+          });
+
+    }).change();
+    });
+</script>
+<%-include("partials/footer")-%>

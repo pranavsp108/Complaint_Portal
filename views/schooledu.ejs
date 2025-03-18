@@ -1,0 +1,349 @@
+<%-include("partials/header")-%>
+
+<div class="type" class="complaintType">
+  <br><br>
+
+  <br><br>
+  <div class="card">
+    <h3 class="card-header">Grievance registration form</h3>
+    <div class="card-body">
+      <form class="" action="/organization/schooledu1" enctype="multipart/form-data" method="post">
+      <div class="card-simple">
+        <h5 class="card-title" style="text-align:center;padding:10px; color:#086972;">Please note : If specific information related to a service is not available / known, select Others/Misc. option for lodging of grievance.</h5>
+      </div>
+
+      <div class="form-group">
+                          <div class="row">
+                              <label class="col-md-4 text-right required" for="Category">Ministry / Department : </label>
+                              <div class="col-md-6">
+                                <p><%= Ministry %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+            <label class="col-md-4 text-right" for="Category">Select main category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_2" name="Category" data-select2-id="Category_2" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="2">Please select main category</option>
+<option value="399">Admission Related</option>
+<option value="400">Service Matter/Pension Related</option>
+<option value="401">Entrance Exam and Results Related</option>
+<option value="402">Degree/Certificate Related</option>
+<option value="403">Mid Day Meal Related</option>
+<option value="404">National Award for Teachers (NAT) Related</option>
+<option value="405">National Bal Bhawan (NBB) Related
+</option>
+<option value="406">National Foundation for Teacher Welfare (NFTW) Related
+</option>
+<option value="407">Health &amp; Nutrition Related
+
+
+
+</option>
+<option value="408">Digital Initiative &amp; ICT Components Related</option>
+<option value="409">Samagra Shiksha - 1</option>
+<option value="410">Adult Education</option>
+<option value="411">Samagra Shiksha - 2</option>
+<option value="412">Statistics</option>
+<option value="413">Others/Misc</option>
+</select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 510.5px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_2-container"><span class="select2-selection__rendered" id="select2-Category_2-container" role="textbox" aria-readonly="true" title="Please select main category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+      <!-- Next level category of 62  refer line 28 -->
+      <div class="form-group next-level-cat 399">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category" data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="27">Select next level category</option>
+    <option value="414">KVS
+    </option>
+    <option value="415">NVS
+    </option>
+    <option value="416">CBSE
+    </option>
+    <option value="417">NCERT
+    </option>
+    <option value="418">ATSA
+    </option>
+    <option value="419">NIOS
+    </option>
+    <option value="420">All School Boards
+    </option>
+    <option value="421">Matters relating to UT
+    </option>
+    <option value="422">Matters relating to Private Schools
+    </option>
+    <option value="423">Indo Mongolian School
+    </option>
+    <option value="424">State Government Schools
+    </option>
+    <option value="425">Others
+    </option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="26" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+      <!-- Next level category of 63  refer line 29 -->
+      <div class="form-group next-level-cat 400">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="46">Select next level category</option>
+    <option value="426">Delayed Salary Payment</option>
+    <option value="427">Appointment/Resignation Related
+    </option>
+    <option value="428">Transfer Related</option>
+    <option value="429">Promotion Related</option>
+    <option value="430">Corruption Related</option>
+    <option value="431">Harrasment Related</option>
+    <option value="432">Pension Related (PPO No.)</option>
+    <option value="433">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="45" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"><span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 64  refer line 30 -->
+    <div class="form-group next-level-cat 401">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="59">Select next level category</option>
+    <option value="490">Hall ticket not received</option>
+    <option value="491">Results not out</option>
+    <option value="492">Board Exam Re-evaluation</option>
+    <option value="493">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="58" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 65  refer line 31 -->
+    <div class="form-group next-level-cat 402">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category" data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="68">Select next level category</option>
+    <option value="515">Certificate not got on time</option>
+    <option value="516">Transfer Certificate Related</option>
+    <option value="517">Change in details in certificates</option>
+    <option value="518">Results Delayed</option>
+    <option value="519">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="67" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 66  refer line 32 -->
+    <div class="form-group next-level-cat 407">
+        <div class="row">
+            <label class="col-md-4 text-right" for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category" data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="119">Select next level category</option>
+    <option value="548">Cook cum Helper</option>
+    <option value="549">Housekeeping</option>
+    <option value="550">Infrastructure</option>
+    <option value="551">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="118" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 67  refer line 33 -->
+    <div class="form-group next-level-cat 408">
+        <div class="row">
+            <label class="col-md-4 text-right" for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="128">Select next level category</option>
+    <option value="552">Economic Analysis</option>
+    <option value="553">Resource Allocation for Education</option>
+    <option value="554">Expenditure on Education</option>
+    <option value="555">Operation Digital Board</option>
+    <option value="556">All Digital Initiatives</option>
+    <option value="557">ICT Component of Samagra Shiksha</option>
+    <option value="558">Coordination</option>
+    <option value="559">Perfotmance Grading Index</option>
+    <option value="560">UDISE+</option>
+    <option value="561">DIKSHA</option>
+    <option value="562">Data related in School Education</option>
+    <option value="563">UNESCO</option>
+    <option value="564">NIC</option>
+    <option value="565">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="127" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 68  refer line 34 -->
+    <div class="form-group next-level-cat 409">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="147">Select next level category</option>
+    <option value="566">Early Childhood Education (ECE) / Pre- Primary</option>
+    <option value="567">Promotion of Sports/Games/Play</option>
+    <option value="568">Promotion of Reading/Libraries</option>
+    <option value="569">Yoga in schools</option>
+    <option value="570">Life Skills</option>
+    <option value="571">Inclusive Education/Childern with Special Needs (CWSN)</option>
+    <option value="572">Equity</option>
+    <option value="573">Experiential Learning including Rangotsav, Langauage Festival etc</option>
+    <option value="574">Adolescent Education</option>
+    <option value="575">Mahila Samakhya &amp; Also</option>
+    <option value="576">Scheme for providing Quality Education in Madrasas (SPQEM)</option>
+    <option value="577">Scheme for Infrastructure Development in Minority Institutions</option>
+    <option value="578">National Means-cum-Merit Scholarship Scheme</option>
+    <option value="579">National Scheme for incentive to Girl Child for Secondary Education</option>
+    <option value="580">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="146" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 69  refer line 35 -->
+    <div class="form-group next-level-cat 410">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="167">Select next level category</option>
+    <option value="581">Adult Education &amp; Literacy</option>
+    <option value="582">Saakshar Bharat Mission</option>
+    <option value="583">Directorate of Adult Education (DAE)</option>
+    <option value="584">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="166" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 411">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="176">Select next level category</option>
+    <option value="585">Policy &amp; Planning</option>
+    <option value="586">Finance, Budget</option>
+    <option value="587">Learning</option>
+    <option value="588">Assessment</option>
+    <option value="589">Teachers &amp; Principals</option>
+    <option value="590">NCTE</option>
+    <option value="591">Vocational Education</option>
+    <option value="592">Model Schools</option>
+    <option value="593">Work related to DBT &amp; Aadhaar</option>
+    <option value="594">RTE Act</option>
+    <option value="595">Appointment of Language Teachers (ALT) Scheme</option>
+    <option value="596">Infrastructure</option>
+    <option value="597">Access</option>
+    <option value="598">Swachh Vidyalaya including Puraskar</option>
+    <option value="599">World Bank</option>
+    <option value="600">UNICEF</option>
+    <option value="601">Coordination</option>
+    <option value="602">Programme for International Studenet Assessment (PISA)</option>
+    <option value="603">National Institute of Educational Planning &amp; Administration (NIEPA)</option>
+    <option value="604">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="175" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 412">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="201">Select next level category</option>
+    <option value="605">Statistics related to School Education</option>
+    <option value="606">Supply of data to UNESCO</option>
+    <option value="607">Supply of data to Institute of Statistics</option>
+    <option value="608">Supply of data to International Agencies</option>
+    <option value="609">Sustainable Development Goals (SDGs)</option>
+    <option value="610">Index of Service (Education)</option>
+    <option value="611">Production</option>
+    <option value="612">Population, Projection</option>
+    <option value="613">Aspirational Districts</option>
+    <option value="614">Education For All (EFA)</option>
+    <option value="615">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="200" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Grievance-->
+    <div class="form-group grievance 413">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Describe your Grievance here :</label>
+          <div class="col-md-6">
+               <textarea autocomplete="off" class="form-control" cols="50" id="Remarks" maxlength="500" name="Remarks" placeholder="Please Enter Text of Grievance (Remarks)"  rows="5" style="resize: none"></textarea><br>
+               <span class="text-info">Maximum 500 characters are allowed in description.</span>
+          </div>
+      </div>
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Attach Files related to Grievance (only one PDF file upto 4MB):</label>
+          <div class="col-md-6">
+<%# <input type="file" id="myfile" name="uploadfile"> %>
+<input name="uploadfile" type="file" multiple="" class="inputFileHidden">
+          </div>
+
+      </div>
+      <div style="text-align: center;">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+  <input type="text" id="Main_Cat_Value" style="visibility:hidden;" name="Main_Cat_Value" value="">
+  <input type="text" id="Sub_Cat_Value" style="visibility:hidden;" name="Sub_Cat_Value" value="">
+  <input type="text" id="" style="visibility:hidden;" name="Mini_Value" value="<%= Ministry %>">
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  $("document").ready(function(){
+
+      $("#Category_2").change(function(){
+          $(this).find("option:selected").each(function(){
+              var optionValue = $(this).attr("value");
+              if(optionValue){
+                  $(".next-level-cat").not("." + optionValue).hide();
+                  $("." + optionValue).show();
+                  $("#Main_Cat_Value").attr("value", $(this).text());
+              } else{
+                  $(".next-level-cat").hide();
+              }
+
+          });
+      }).change();
+
+  });
+
+  </script>
+  <script>
+  $("document").ready(function(){
+      $(".next-level-cat").change(function(){
+          $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+              $(".grievance").show();
+              $("#Sub_Cat_Value").attr("value", $(this).text());
+            }
+            });
+
+      }).change();
+      });
+  </script>
+<%-include("partials/footer")-%>

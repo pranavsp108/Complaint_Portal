@@ -1,0 +1,620 @@
+<%-include("partials/header")-%>
+
+<div class="type" class="complaintType">
+  <br><br>
+
+  <br><br>
+  <div class="card">
+    <h3 class="card-header">Grievance registration form</h3>
+    <div class="card-body">
+
+        <form class="" action="/organization/banking1" enctype="multipart/form-data" method="post">
+
+      <div class="card-simple">
+        <h5 class="card-title" style="text-align:center;padding:10px; color:#086972;">Please note : If specific information related to a service is not available / known, select Others/Misc. option for lodging of grievance.</h5>
+      </div>
+
+      <div class="form-group">
+                          <div class="row">
+                              <label class="col-md-4 text-right " for="Category">Ministry / Department : </label>
+                              <div class="col-md-6">
+                                <p><%= Ministry %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group" data-select2-id="4">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select main category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_2" name="Category" data-select2-id="Category_2" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="2">Please select main category</option>
+<option value="252" data-select2-id="9">Bank Locker Related</option>
+<option value="253" data-select2-id="10">Deficiency in Customer Service Related</option>
+<option value="254" data-select2-id="11">Education Loans Related</option>
+<option value="255" data-select2-id="12">Housing Loan Related</option>
+<option value="256" data-select2-id="13">Non Banking Finance Company (NBFC) other than Housing Finance Companies Related</option>
+<option value="257" data-select2-id="14">Pradhan Mantri Jan Dhan Yojna (PMJDY) Related</option>
+<option value="258" data-select2-id="15">Pradhan Mantri Mudra Yojana (PMMY) Related</option>
+<option value="259" data-select2-id="16">Agricultural Matters Related</option>
+<option value="260" data-select2-id="17">Credit/Debit/ATM Cards Related</option>
+<option value="261" data-select2-id="18">Service Charges Related</option>
+<option value="262" data-select2-id="19">Government sponsored Schemes Related</option>
+<option value="263" data-select2-id="20">Fraud</option>
+<option value="264" data-select2-id="21">Mobile Banking</option>
+<option value="265" data-select2-id="22">Misappropriation</option>
+<option value="266" data-select2-id="23">Misbehaviour/Harrassment/Corruption by Bank Staff</option>
+<option value="267" data-select2-id="24">One Time Settlement of Loan</option>
+<option value="268" data-select2-id="25">Opening of New Branches</option>
+<option value="269" data-select2-id="26">Pradhan Mantri Jeevan Jyoti Yojna</option>
+<option value="270" data-select2-id="27">Pradhan Mantri Jeevan Suraksha Yojana</option>
+<option value="271" data-select2-id="28">Recruitment Related</option>
+<option value="272" data-select2-id="29">Service Matter Related</option>
+<option value="273" data-select2-id="30">Pension/Retirement Benefits Related</option>
+<option value="274" data-select2-id="31">Stand Up India Related</option>
+<option value="275" data-select2-id="32">Vacation of Premises</option>
+<option value="276" data-select2-id="33">Miscellaneous/Others</option>
+</select><span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" data-select2-id="98" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_2-container"><span class="select2-selection__rendered" id="select2-Category_2-container" role="textbox" aria-readonly="true" title="Please select main category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+      <!-- Next level category of 657  refer line 28 -->
+      <div class="form-group  next-level-cat 252">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="58">Select next level category</option>
+    <option value="277">Non-availability of locker</option>
+    <option value="278">Demand of Fixed Deposit</option>
+    <option value="279">Problem in Locker operation</option>
+    <option value="280">Unauthorised break opening of locker</option>
+    <option value="281">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="57" style="width: 330px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Next level category of 658  refer line 29 -->
+      <div class="form-group next-level-cat 253">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="68">Select next level category</option>
+    <option value="282">Acceptance of Cash</option>
+    <option value="283">Issue/Payment of Draft/Banker Cheque</option>
+    <option value="284">Delay in Service</option>
+    <option value="285">Non-adherance to timing of opening/closing of Branch</option>
+    <option value="286">Frequent Failure of Banks server</option>
+    <option value="287">Non-opening/delay in opening of new accounts</option>
+    <option value="288">Non settlement/delay in settlement of Deceased Account</option>
+    <option value="289">Non-transfer/Delay in transfer of accounts from one office to another</option>
+    <option value="290">Non-payment/Delay in payment of Fixed/Term Deposit</option>
+    <option value="291">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="67" style="width: 330px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 659  refer line 30 -->
+    <div class="form-group next-level-cat 254">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="83">Select next level category</option>
+    <option value="292">Non-sanctioning of Loan</option>
+    <option value="293">Delay in sanction of Loan</option>
+    <option value="294">Demand of Collateral Security</option>
+    <option value="295">Others</option>
+    <option value="296">Short Sanctioning of Loan</option>
+    <option value="297">Non-receipt of Subsidy</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="82" style="width: 330px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next level category of 660  refer line 31 -->
+    <div class="form-group next-level-cat 255">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="94">Select next level category</option>
+    <option value="298">Related to Banks</option>
+    <option value="299">Related to Housing Finance Companies</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="93" style="width: 330px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Next level category of 661  refer line 32 -->
+    <div class="form-group next-level-cat 257">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="148">Select next level category</option>
+    <option value="306">Delay/Non-opening of Account</option>
+    <option value="307">Delay in Settlement of Death Claim</option>
+    <option value="308">Levy of Service Charges</option>
+    <option value="309">Non-issue of Rupay/ATM card</option>
+    <option value="310">Non-sanctioning of OD Limit</option>
+    <option value="311">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="147" style="width: 330px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 258">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="139">Select next level category</option>
+    <option value="312" data-select2-id="142">Delay / Non-sanctioning of Loan</option>
+    <option value="313" data-select2-id="143">Demand of Coollateral Security</option>
+    <option value="314" data-select2-id="144">Others</option>
+    </select><span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" data-select2-id="138" style="width: 364px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 259">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="150">Select next level category</option>
+    <option value="315" data-select2-id="153">Delay/Non-sanctioning of Loan</option>
+    <option value="316" data-select2-id="154">Waiver of Agricultural Loan</option>
+    <option value="317" data-select2-id="155">Fasal Bima Yojana Related</option>
+    <option value="318" data-select2-id="156">Others</option>
+  </select><span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" data-select2-id="149" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 260 ">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="162">Select next level category</option>
+    <option value="319" data-select2-id="165">Delay/Non-reversal of failed transactions</option>
+    <option value="320" data-select2-id="166">Non-functioning of ATM</option>
+    <option value="321" data-select2-id="167">Levy of Service Charges</option>
+    <option value="322" data-select2-id="168">Levy of Penal Interest</option>
+    <option value="323" data-select2-id="169">Non-issuance of Credit/Debit/ATM cards</option>
+    <option value="324" data-select2-id="170">ATM/Credit Card Frauds</option>
+    <option value="325" data-select2-id="171">Non-issuance of ATM pin</option>
+    <option value="326" data-select2-id="172">Others</option>
+    </select><span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" data-select2-id="161" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 261" >
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="178">Select next level category</option>
+    <option value="327" data-select2-id="181">Non-maintenance of Minimum Balance</option>
+    <option value="328" data-select2-id="182">Loan processing Charges</option>
+    <option value="329" data-select2-id="183">Annual Maintenance charges on Credit/Debit/ATM cards</option>
+    <option value="330" data-select2-id="184">Others</option>
+    </select><span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" data-select2-id="177" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 262 ">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="192">Select next level category</option>
+    <option value="331" data-select2-id="195">Prime Minister Rojgar Yojana</option>
+    <option value="332" data-select2-id="196">State Government Employment Schemes</option>
+    <option value="333" data-select2-id="197">Prime Minister Awas Yojana</option>
+    <option value="334" data-select2-id="198">Others</option>
+    </select><span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" data-select2-id="191" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="divBank" class="form-group next-level-cat 263">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Bank">Department/Bank/Financial Institute</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Bank" ><option value="">Please select a Department/Bank/Financial Institute</option>
+<option value="DEABD">Department of Financial Services</option>
+<option value="RBIBK">Reserve Bank of India</option>
+<option value="ANDBK">Andhra Bank</option>
+<option value="ALLBK">Allahabad Bank</option>
+<option value="BOBBK">Bank of Baroda</option>
+<option value="BOIBK">Bank of India</option>
+<option value="MAHBK">Bank of Maharashtra</option>
+<option value="CBIBK">Central Bank of India</option>
+<option value="CANBK">Canara Bank</option>
+<option value="CORBK">Corporation Bank</option>
+<option value="DENBK">Dena Bank</option>
+<option value="IDBIB">IDBI Bank</option>
+<option value="INDBK">Indian Bank</option>
+<option value="IOBBK">Indian Overseas Bank</option>
+<option value="OBCBK">Oriental Bank of Commerce</option>
+<option value="PNBBK">Punjab National Bank</option>
+<option value="PSBBK">Punjab &amp; Sind Bank</option>
+<option value="SBIBK">State Bank of India</option>
+<option value="SYNBK">Syndicate Bank</option>
+<option value="UNIBK">Union Bank of India</option>
+<option value="UCOBK">UCO Bank</option>
+<option value="UBIBK">United Bank of India</option>
+<option value="VIJBK">Vijaya Bank</option>
+<option value="EXIMB">EXIM Bank of India</option>
+<option value="IFCIL">IFCI Ltd.</option>
+<option value="IIFCL">India Infrastructure Finance Company Limited</option>
+<option value="SIDBI">Small Industries Development Bank of India</option>
+<option value="NBARD">NABARD</option>
+<option value="NHBNK">National Housing Bank</option>
+<option value="OTHER">Other/Private Sector Bank.</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <div id="divBank" class="form-group  next-level-cat 264">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Bank">Bank</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Bank" ><option value="">Please select a Bank</option>
+<option value="RBIBK">Reserve Bank of India</option>
+<option value="ANDBK">Andhra Bank</option>
+<option value="ALLBK">Allahabad Bank</option>
+<option value="BOBBK">Bank of Baroda</option>
+<option value="BOIBK">Bank of India</option>
+<option value="MAHBK">Bank of Maharashtra</option>
+<option value="CBIBK">Central Bank of India</option>
+<option value="CANBK">Canara Bank</option>
+<option value="CORBK">Corporation Bank</option>
+<option value="DENBK">Dena Bank</option>
+<option value="IDBIB">IDBI Bank</option>
+<option value="INDBK">Indian Bank</option>
+<option value="IOBBK">Indian Overseas Bank</option>
+<option value="OBCBK">Oriental Bank of Commerce</option>
+<option value="PNBBK">Punjab National Bank</option>
+<option value="PSBBK">Punjab &amp; Sind Bank</option>
+<option value="SBIBK">State Bank of India</option>
+<option value="SYNBK">Syndicate Bank</option>
+<option value="UNIBK">Union Bank of India</option>
+<option value="UCOBK">UCO Bank</option>
+<option value="UBIBK">United Bank of India</option>
+<option value="VIJBK">Vijaya Bank</option>
+<option value="OTHER">Other/Private Sector Bank.</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <div id="divBank" class="form-group next-level-cat 265">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Bank">Bank</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Bank" ><option value="">Please select a Bank</option>
+<option value="RBIBK">Reserve Bank of India</option>
+<option value="ANDBK">Andhra Bank</option>
+<option value="ALLBK">Allahabad Bank</option>
+<option value="BOBBK">Bank of Baroda</option>
+<option value="BOIBK">Bank of India</option>
+<option value="MAHBK">Bank of Maharashtra</option>
+<option value="CBIBK">Central Bank of India</option>
+<option value="CANBK">Canara Bank</option>
+<option value="CORBK">Corporation Bank</option>
+<option value="DENBK">Dena Bank</option>
+<option value="IDBIB">IDBI Bank</option>
+<option value="INDBK">Indian Bank</option>
+<option value="IOBBK">Indian Overseas Bank</option>
+<option value="OBCBK">Oriental Bank of Commerce</option>
+<option value="PNBBK">Punjab National Bank</option>
+<option value="PSBBK">Punjab &amp; Sind Bank</option>
+<option value="SBIBK">State Bank of India</option>
+<option value="SYNBK">Syndicate Bank</option>
+<option value="UNIBK">Union Bank of India</option>
+<option value="UCOBK">UCO Bank</option>
+<option value="UBIBK">United Bank of India</option>
+<option value="VIJBK">Vijaya Bank</option>
+<option value="OTHER">Other/Private Sector Bank.</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <div id="divBank" class="form-group  next-level-cat 266">
+        <div class="row">
+                    <label class="col-md-4 text-right" for="Bank">Bank/Financial Institute</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Bank"><option value="">Please select a Bank/Financial Institute</option>
+<option value="RBIBK">Reserve Bank of India</option>
+<option value="ANDBK">Andhra Bank</option>
+<option value="ALLBK">Allahabad Bank</option>
+<option value="BOBBK">Bank of Baroda</option>
+<option value="BOIBK">Bank of India</option>
+<option value="MAHBK">Bank of Maharashtra</option>
+<option value="CBIBK">Central Bank of India</option>
+<option value="CANBK">Canara Bank</option>
+<option value="CORBK">Corporation Bank</option>
+<option value="DENBK">Dena Bank</option>
+<option value="IDBIB">IDBI Bank</option>
+<option value="INDBK">Indian Bank</option>
+<option value="IOBBK">Indian Overseas Bank</option>
+<option value="OBCBK">Oriental Bank of Commerce</option>
+<option value="PNBBK">Punjab National Bank</option>
+<option value="PSBBK">Punjab &amp; Sind Bank</option>
+<option value="SBIBK">State Bank of India</option>
+<option value="SYNBK">Syndicate Bank</option>
+<option value="UNIBK">Union Bank of India</option>
+<option value="UCOBK">UCO Bank</option>
+<option value="UBIBK">United Bank of India</option>
+<option value="VIJBK">Vijaya Bank</option>
+<option value="EXIMB">EXIM Bank of India</option>
+<option value="IFCIL">IFCI Ltd.</option>
+<option value="IIFCL">India Infrastructure Finance Company Limited</option>
+<option value="SIDBI">Small Industries Development Bank of India</option>
+<option value="NBARD">NABARD</option>
+<option value="NHBNK">National Housing Bank</option>
+<option value="OTHER">Other/Private Sector Bank.</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <div id="divBank" class="form-group next-level-cat 267">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Bank">Bank</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Bank" ><option value="">Please select a Bank</option>
+<option value="RBIBK">Reserve Bank of India</option>
+<option value="ANDBK">Andhra Bank</option>
+<option value="ALLBK">Allahabad Bank</option>
+<option value="BOBBK">Bank of Baroda</option>
+<option value="BOIBK">Bank of India</option>
+<option value="MAHBK">Bank of Maharashtra</option>
+<option value="CBIBK">Central Bank of India</option>
+<option value="CANBK">Canara Bank</option>
+<option value="CORBK">Corporation Bank</option>
+<option value="DENBK">Dena Bank</option>
+<option value="IDBIB">IDBI Bank</option>
+<option value="INDBK">Indian Bank</option>
+<option value="IOBBK">Indian Overseas Bank</option>
+<option value="OBCBK">Oriental Bank of Commerce</option>
+<option value="PNBBK">Punjab National Bank</option>
+<option value="PSBBK">Punjab &amp; Sind Bank</option>
+<option value="SBIBK">State Bank of India</option>
+<option value="SYNBK">Syndicate Bank</option>
+<option value="UNIBK">Union Bank of India</option>
+<option value="UCOBK">UCO Bank</option>
+<option value="UBIBK">United Bank of India</option>
+<option value="VIJBK">Vijaya Bank</option>
+<option value="OTHER">Other/Private Sector Bank.</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 269 ">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="52">Select next level category</option>
+    <option value="335" data-select2-id="55">Grievance against Bank</option>
+    <option value="336" data-select2-id="56">Grievance against Insurance Company</option>
+    </select><span class="select2 select2-container select2-container--default select2-container--above select2-container--focus" dir="ltr" data-select2-id="51" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 270">
+        <div class="row">
+            <label class="col-md-4 text-right" for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="70">Select next level category</option>
+    <option value="337">Grievance against Bank</option>
+    <option value="338">Grievance against Insurance Company</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="69" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="divBank" class="form-group next-level-cat 271">
+        <div class="row">
+                    <label class="col-md-4 text-right" for="Bank">Department/Bank/Financial Institute</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Bank" ><option value="">Please select a Department/Bank/Financial Institute</option>
+<option value="DEABD">Department of Financial Services</option>
+<option value="RBIBK">Reserve Bank of India</option>
+<option value="ANDBK">Andhra Bank</option>
+<option value="ALLBK">Allahabad Bank</option>
+<option value="BOBBK">Bank of Baroda</option>
+<option value="BOIBK">Bank of India</option>
+<option value="MAHBK">Bank of Maharashtra</option>
+<option value="CBIBK">Central Bank of India</option>
+<option value="CANBK">Canara Bank</option>
+<option value="CORBK">Corporation Bank</option>
+<option value="DENBK">Dena Bank</option>
+<option value="IDBIB">IDBI Bank</option>
+<option value="INDBK">Indian Bank</option>
+<option value="IOBBK">Indian Overseas Bank</option>
+<option value="OBCBK">Oriental Bank of Commerce</option>
+<option value="PNBBK">Punjab National Bank</option>
+<option value="PSBBK">Punjab &amp; Sind Bank</option>
+<option value="SBIBK">State Bank of India</option>
+<option value="SYNBK">Syndicate Bank</option>
+<option value="UNIBK">Union Bank of India</option>
+<option value="UCOBK">UCO Bank</option>
+<option value="UBIBK">United Bank of India</option>
+<option value="VIJBK">Vijaya Bank</option>
+<option value="EXIMB">EXIM Bank of India</option>
+<option value="IFCIL">IFCI Ltd.</option>
+<option value="IIFCL">India Infrastructure Finance Company Limited</option>
+<option value="SIDBI">Small Industries Development Bank of India</option>
+<option value="NBARD">NABARD</option>
+<option value="NHBNK">National Housing Bank</option>
+<option value="OTHER">Other/Private Sector Bank.</option>
+</select>                                                    </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 272">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="81">Select next level category</option>
+    <option value="339">Non-commencement of Pesnion/Family Pension</option>
+    <option value="340">Non-submission of Life Certificate</option>
+    <option value="341">Non-payment of revised pension/arrears</option>
+    <option value="342">Non-sanction of Pension Loan</option>
+    <option value="343">Delay/Non-transfer of pension Account</option>
+    <option value="344">Non-restoration of Commuted Pension</option>
+    <option value="345">Less payment of Pension</option>
+    <option value="346">Excess Recovery of Pension</option>
+    <option value="347">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="80" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group next-level-cat 273">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="95">Select next level category</option>
+    <option value="348">Delay/Non-sanctioning of Loan</option>
+    <option value="349">Demand of Collateral Security</option>
+    <option value="350">Others</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="94" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group  next-level-cat 274">
+        <div class="row">
+            <label class="col-md-4 text-right " for="Category">Select next level category</label>
+            <div class="col-md-6">
+                <select autocomplete="off" class="form-control select2-hidden-accessible" id="Category_3" name="Category"  data-select2-id="Category_3" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="103">Select next level category</option>
+    <option value="351">Non-renewal of Lease Agreement</option>
+    <option value="352">Non-vacation of premises</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="102" style="width: 360px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Category_3-container"><span class="select2-selection__rendered" id="select2-Category_3-container" role="textbox" aria-readonly="true" title="Select next level category"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="divBank" class="form-group  next-level-cat 275">
+        <div class="row">
+                    <label class="col-md-4 text-right " for="Bank">Department/Bank/Financial Institute</label>
+                    <div class="col-md-6">
+                                                                                <select autocomplete="off" class="form-control" id="ddl" name="Bank"><option value="">Please select a Department/Bank/Financial Institute</option>
+<option value="DEABD">Department of Financial Services</option>
+<option value="RBIBK">Reserve Bank of India</option>
+<option value="ANDBK">Andhra Bank</option>
+<option value="ALLBK">Allahabad Bank</option>
+<option value="BOBBK">Bank of Baroda</option>
+<option value="BOIBK">Bank of India</option>
+<option value="MAHBK">Bank of Maharashtra</option>
+<option value="CBIBK">Central Bank of India</option>
+<option value="CANBK">Canara Bank</option>
+<option value="CORBK">Corporation Bank</option>
+<option value="DENBK">Dena Bank</option>
+<option value="IDBIB">IDBI Bank</option>
+<option value="INDBK">Indian Bank</option>
+<option value="IOBBK">Indian Overseas Bank</option>
+<option value="OBCBK">Oriental Bank of Commerce</option>
+<option value="PNBBK">Punjab National Bank</option>
+<option value="PSBBK">Punjab &amp; Sind Bank</option>
+<option value="SBIBK">State Bank of India</option>
+<option value="SYNBK">Syndicate Bank</option>
+<option value="UNIBK">Union Bank of India</option>
+<option value="UCOBK">UCO Bank</option>
+<option value="UBIBK">United Bank of India</option>
+<option value="VIJBK">Vijaya Bank</option>
+<option value="EXIMB">EXIM Bank of India</option>
+<option value="IFCIL">IFCI Ltd.</option>
+<option value="IIFCL">India Infrastructure Finance Company Limited</option>
+<option value="SIDBI">Small Industries Development Bank of India</option>
+<option value="NBARD">NABARD</option>
+<option value="NHBNK">National Housing Bank</option>
+<option value="OTHER">Other/Private Sector Bank.</option>
+</select>                                                    </div>
+        </div>
+    </div>
+    <!--Grievance-->
+    <div class="form-group grievance 276">
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Describe your Grievance here :</label>
+          <div class="col-md-6">
+               <textarea autocomplete="off" class="form-control" cols="50" id="Remarks" maxlength="500" name="Remarks" placeholder="Please Enter Text of Grievance (Remarks)"  rows="5" style="resize: none"></textarea><br>
+               <span class="text-info">Maximum 500 characters are allowed in description.</span>
+          </div>
+      </div>
+      <div class="row">
+          <label class="col-md-4 text-right " for="Category">Attach Files related to Grievance (only one PDF file upto 4MB):</label>
+          <div class="col-md-6">
+<%# <input type="file" id="myfile" name="uploadfile"> %>
+<input name="uploadfile" type="file" multiple="" class="inputFileHidden">
+          </div>
+
+      </div>
+      <div style="text-align: center;">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+  <input type="text" id="Main_Cat_Value" style="visibility:hidden;" name="Main_Cat_Value" value="">
+  <input type="text" id="Sub_Cat_Value" style="visibility:hidden;" name="Sub_Cat_Value" value="">
+  <input type="text" id="" style="visibility:hidden;" name="Mini_Value" value="<%= Ministry %>">
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  $("document").ready(function(){
+
+      $("#Category_2").change(function(){
+          $(this).find("option:selected").each(function(){
+              var optionValue = $(this).attr("value");
+              if(optionValue){
+                  $(".next-level-cat").not("." + optionValue).hide();
+                  $("." + optionValue).show();
+                  $("#Main_Cat_Value").attr("value", $(this).text());
+              } else{
+                  $(".next-level-cat").hide();
+              }
+
+          });
+      }).change();
+
+  });
+
+  </script>
+  <script>
+  $("document").ready(function(){
+      $(".next-level-cat").change(function(){
+          $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+              $(".grievance").show();
+              $("#Sub_Cat_Value").attr("value", $(this).text());
+            }
+            });
+
+      }).change();
+      });
+  </script>
+  <%-include("partials/footer")-%>

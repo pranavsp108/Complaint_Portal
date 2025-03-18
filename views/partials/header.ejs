@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dreams Template">
+  <meta name="keywords" content="Dreams, unica, creative, html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OYE-Complaint</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Page Preloder -->
+  <div id="preloder">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header Section Begin -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-2">
+          <div class="header__logo">
+            <a href="/"><img src="img/oyelogo.jpg" style="height:40px" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-9">
+          <nav class="header__menu mobile-menu">
+            <ul>
+              <li class="inactive"><a href="/">Home</a></li>
+
+
+              <%if  (typeof user =='undefined') {%>
+              <li class="inactive"><a href="/FileAComplaint">File a Complaint</a></li>
+              <li class="inactive"><a href="/help">Help</a></li>
+              <li class="inactive"><a href="/chat/notloggedIn">Forum</a></li>
+              <li class="inactive"><a href="/login-user">Login</a></li>
+              <li class="inactive"><a href="/signup-user">Signup</a></li>
+
+
+              <%} else if(user.isEmployee) {%>
+              <li class="inactive"><a href="/chat">Forum</a></li>
+              <li class="inactive"><a href="/organization-emp">Received Grievances</a></li>
+              <li class="inactive"><a href="/logout">Logout</a></li>
+
+              <%} else {%>
+              <li class="inactive"><a href="/FileAComplaint">File a Complaint</a></li>
+              <li class="inactive"><a href="/help">Help</a></li>
+              <li class="inactive"><a href="/myGrievances">My Grievances</a></li>
+              <li class="inactive"><a href="/chat">Forum</a></li>
+              <li class="inactive"><a href="/logout">Logout</a></li>
+
+              <% } %>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2 col-md-1">
+          <div class="header__right">
+            <div class="header__right__social">
+              <a href="https://www.facebook.com/Oye.org" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://in.linkedin.com/company/oye-organization-for-youth-elderly?trk=public_profile_topcard_current_company" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/oyeindia/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <!-- <div class="header__right__search">
+                            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+                        </div> -->
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu-wrap"></div>
+    </div>
+  </header>

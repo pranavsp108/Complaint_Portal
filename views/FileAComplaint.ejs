@@ -1,0 +1,114 @@
+<%-include("partials/header")-%>
+
+<div class="type" class="complaintType">
+  <br><br>
+  <h2>FILE A COMPLAINT</h2>
+  <br><br>
+  <div class="card">
+    <h3 class="card-header">Terms and conditions</h3>
+    <div class="card-body">
+      <h5 class="card-title" style="text-align:center;">List of subjects/topics which can not be treated as grievance:</h5>
+      <ul>
+        <li>
+          <p class="card-text">RTI Matters</p>
+        </li>
+        <li>
+          <p class="card-text">Court related/ Subjudice matters</p>
+        </li>
+        <li>
+          <p class="card-text">Religious Matters</p>
+        </li>
+        <li>
+          <p class="card-text">Only grievance may be registered and not suggestions</p>
+        </li>
+        <li>
+          <p class="card-text">Grievances of Government employees concerning their service matters including disciplinary proceedings etc. unless the aggrieved employee has already exhausted the prescribed channels keeping in view the <a
+              target="_blank" href="https://pgportal.gov.in/Home/Preview/RE9QVF9PTV9PblNlcnZpY2VNYXR0ZXJzKEVuZ2xpc2gpMzEtMDgtMjAxMy1Fc3R0LUEtSUlJLUVuZy5wZGY%3d" style="color:#3282b8;">DoPT OM No. 11013/08/2013-Estt.(A-III) dated 31.08.2015</a></p>
+        </li>
+      </ul>
+
+      <a href="/organization" class="btn btn-primary">I agree</a>
+    </div>
+  </div>
+
+  <%# <form action="cmplaint.php" method="POST" class="formalign">
+			<fieldset>
+				<h2 class="comptype">Type of complaint</h2>
+				<hr class="linewid">
+				<div>
+				<div>
+					<input id="Field5_0" name="type" type="radio" value="murder" tabindex="1">
+					<label class="choice" for="Field5_0">Murder/Homicide</label>
+				</div>
+				<div>
+					<input id="Field5_1" name="type" type="radio" value="domestic" tabindex="2">
+					<label class="choice" for="Field5_1">Domestic Violence</label>
+				</div>
+				<div>
+					<input id="Field5_2" name="type" type="radio" value="sexual" tabindex="3">
+					<label class="choice" for="Field5_2">Sexual Harassment</label>
+				</div>
+				<div>
+					<input id="Field5_3" name="type" type="radio" value="assault" tabindex="4">
+					<label class="choice" for="Field5_3">Assault/Violence</label>
+				</div>
+				<div>
+					<input id="Field5_4" name="type" type="radio" value="theft" tabindex="5">
+					<label class="choice" for="Field5_4">Theft/Robbery</label>
+				</div>
+				</div>
+			</fieldset>
+			<div>
+				<label class="desc" id="title4" for="Field4">Any other? Please Specify!</label>
+				<div>
+					<textarea id="Field4" name="other" spellcheck="true" rows="2" cols="30" tabindex="6"></textarea>
+				</div>
+			</div>
+<!--			<br><br><br><br>-->
+			<div>
+			<fieldset>
+				<h2 id="title6" class="comptype">Assistance Required</h2>
+				<hr class="linewid">
+				<div>
+					<input id="Field6" name="medical" type="checkbox" value="First Choice" tabindex="8">
+					<label class="choice" for="Field6">Medical</label>
+				</div>
+				<div>
+					<input id="Field7" name="police" type="checkbox" value="Second Choice" tabindex="9">
+					<label class="choice" for="Field7">Police</label>
+				</div>
+				<div>
+					<input id="Field8" name="counselling" type="checkbox" value="Third Choice" tabindex="10">
+					<label class="choice" for="Field8">Counselling</label>
+				</div>
+			</fieldset>
+			</div>
+			<div>
+				<h2 id="title6" class="comptype">Event Details</h2>
+				<hr class="linewid">
+				<div>
+					<textarea id="Field4" name="details" spellcheck="true" rows="5" cols="50" tabindex="7" placeholder="Enter Details.."></textarea>
+				</div>
+			</div>
+			<div>
+				<label class="essdetails" id="title1" for="Field1">Full Name</label>
+				<hr class="linewid">
+				<div>
+					<input id="Field1" name="name" type="text" class="field text fn" value="" size="30" tabindex="9">
+				</div>
+			</div>
+
+			<div>
+				<label class="essdetails" id="title3" for="Field3">Email</label>
+				<hr class="linewid">
+				<div>
+					<input id="Field3" name="email" type="email" spellcheck="false" value="" size="30" maxlength="255" tabindex="10">
+				</div>
+			</div>
+			<div class="submitComplaint">
+            <input type="submit" class="btn btn-danger subbtn" name='submit'  value='CryOut!'>
+		    </div>
+		</form> %>
+</div>
+
+<%-include("partials/footer")-%>
